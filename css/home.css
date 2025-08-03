@@ -65,7 +65,8 @@ hr{
 }
 
 .contact-button{
-  width: 110px;
+  font-size: 15px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,6 +95,8 @@ hr{
 }
 
 .know-us{
+  margin: 0 0 60px 0;
+  padding: 0 100px;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -108,6 +111,82 @@ hr{
 
 .know-us-text-2{
   text-align: center;
-  max-width: 500px;
+  max-width: 550px;
   color: #0e8a78;
+  font-size: 17px;
+}
+
+.CTA-sobre{
+  padding: 0 100px;
+  margin: 50px 0;
+}
+
+.CTA-sobre-container{
+  padding-left: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50vh 50vh;
+}
+
+.CTA-img1{
+  background-image: url(/img/womanimg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.CTA-text1{
+  padding: 0 30px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.CTA-text1-p1{
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.CTA-text1-p2{
+  max-width: 600px;
+  font-size: 17px;
+  padding: 0 0 20px;
+}
+
+.CTA-btn{
+  font-size: 17px;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #0e8a78;
+  background-color: #ffffff00;
+  color: #0e8a78;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.CTA-img2{
+  background-image: url(/img/manimg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.CTA-text2{
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.CTA-text2-p1{
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.CTA-text2-p2{
+  max-width: 500px;
+  font-size: 17px;
+  padding: 0 0 20px;
+}
+
+.CTA-produtos-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
