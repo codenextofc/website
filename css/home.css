@@ -118,14 +118,14 @@ hr{
 
 .CTA-sobre{
   padding: 0 100px;
-  margin: 50px 0;
+  margin: 50px 0 100px 0;
 }
 
 .CTA-sobre-container{
   padding-left: 0 100px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 45vh 45vh;
 }
 
 .CTA-img1{
@@ -141,13 +141,14 @@ hr{
   display: flex;
 }
 
+
 .CTA-text1-p1{
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   font-size: 30px;
 }
 
 .CTA-text1-p2{
-  max-width: 600px;
+  max-width: 40vw;
   font-size: 17px;
   padding: 0 0 20px;
 }
@@ -181,12 +182,42 @@ hr{
 }
 
 .CTA-text2-p2{
-  max-width: 500px;
+  max-width: 35vw;
   font-size: 17px;
   padding: 0 0 20px;
 }
 
 .CTA-produtos-container{
+  justify-content: center;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 45vh;
+}
+
+.CTA-produtos{
+  padding: 0 100px;
+}
+
+.CTA-produtos-text{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.CTA-produtos-p1{
+  font-size: 30px;
+  padding: 0 0 20px 0;
+}
+
+.CTA-produtos-p2{
+  margin: 0 0 25px 0;
+  font-size: 17px;
+  max-width: 35vw;
+}
+
+.CTA-img3{
+  background-repeat: no-repeat;
+  background-image: url(/img/icons.jpg);
+  background-position: center center;
+  background-size: 80%;
 }
