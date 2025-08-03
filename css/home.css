@@ -184,37 +184,63 @@ hr{
   padding: 0 0 20px;
 }
 
-.CTA-produtos-container{
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 45vh;
-}
-
-.CTA-produtos{
+.CTA-products-container{
   padding: 0 100px;
 }
 
-.CTA-produtos-text{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
-
-.CTA-produtos-p1{
+.CTA-products-text1{
+  padding: 10px 0;
   font-size: 30px;
-  padding: 0 0 20px 0;
 }
 
-.CTA-produtos-p2{
-  margin: 0 0 25px 0;
+.CTA-products-text2{
   font-size: 17px;
-  max-width: 35vw;
+  padding: 0 0 20px 0;
+  max-width: 80%;
 }
 
-.CTA-img3{
-  background-repeat: no-repeat;
-  background-image: url(/img/icons.jpg);
+.leaks-container{
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 32%);
+  display: grid;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.leak1{
+  padding: 0 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 35vh;
+  background-image: url(/img/codenextbg.jpg);
+  background-size: cover;
   background-position: center center;
-  background-size: 80%;
+}
+
+.leak2{
+  height: 200px;
+  background-image: url(/img/icons.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.leak3{
+  height: 200px;
+  background-image: url(/img/icons.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.leak-p1{
+  color: #FCFCFC;
+  font-weight: 600;
+}
+
+.leak-p2{
+  max-width: 350px;
+  color: #FCFCFC;
+  font-size: 13px;
 }
