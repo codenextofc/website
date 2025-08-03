@@ -53,13 +53,6 @@ hr{
   text-decoration: none;
 }
 
-.hero-section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .contact-button{
   font-size: 15px;
   width: 120px;
@@ -75,7 +68,7 @@ hr{
   color: #FCFCFC;
 }
 
-.hero-section-background-logo{
+.background{
   justify-content: center;
   align-items: center;
   display: flex;
@@ -84,137 +77,46 @@ hr{
   width: 100vw;
   height: 350px;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 
-.hero-section-logo{
-  width: 400px;
-}
-
-.know-us{
-  margin: 0 0 60px 0;
-  padding: 0 100px;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.know-us-text-1{
-  text-align: center;
-  padding: 10px 0;
+.hero-section-text1{
+  padding: 20px 0;
+  font-weight: 600;
+  color: #FCFCFC;
   font-size: 30px;
 }
 
-.know-us-text-2{
+.hero-section-text2{
   text-align: center;
   max-width: 550px;
-  color: #0e8a78;
+  color: #FCFCFC;
   font-size: 17px;
+  padding-bottom: 20px;
 }
 
-.CTA-sobre{
+.main-container{
+  height: 60vh;
   padding: 0 100px;
-  margin: 50px 0 100px 0;
-}
-
-.CTA-sobre-container{
-  padding-left: 0 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 45vh 45vh;
-}
-
-.CTA-img1{
-  background-image: url(/img/womanimg.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.CTA-text1{
-  padding: 0 30px;
-  justify-content: center;
-  flex-direction: column;
+  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.CTA-text1-p1{
-  padding: 0 0 10px 0;
+.main-text1{
+  padding: 40px 0 0 0;
   font-size: 30px;
 }
 
-.CTA-text1-p2{
-  max-width: 40vw;
+.main-text2{
+  padding: 20px 0;
+  max-width: 700px;
   font-size: 17px;
-  padding: 0 0 20px;
 }
 
-.CTA-btn{
+.main-text3{
+  padding: 20px 0;
+  max-width: 600px;
   font-size: 17px;
-  height: 50px;
-  width: 150px;
-  border: 2px solid #0e8a78;
-  background-color: #ffffff00;
-  color: #0e8a78;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.CTA-img2{
-  background-image: url(/img/manimg.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.CTA-text2{
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-}
-
-.CTA-text2-p1{
-  padding: 10px 0;
-  font-size: 30px;
-}
-
-.CTA-text2-p2{
-  max-width: 35vw;
-  font-size: 17px;
-  padding: 0 0 20px;
-}
-
-.CTA-produtos-container{
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 45vh;
-}
-
-.CTA-produtos{
-  padding: 0 100px;
-}
-
-.CTA-produtos-text{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
-
-.CTA-produtos-p1{
-  font-size: 30px;
-  padding: 0 0 20px 0;
-}
-
-.CTA-produtos-p2{
-  margin: 0 0 25px 0;
-  font-size: 17px;
-  max-width: 35vw;
-}
-
-.CTA-img3{
-  background-repeat: no-repeat;
-  background-image: url(/img/icons.jpg);
-  background-position: center center;
-  background-size: 80%;
 }
