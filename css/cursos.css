@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -9,115 +9,119 @@
   font-weight: 300;
 }
 
-hr{
+hr {
   border: 0.1px solid #e4e4e4;
 }
 
-.logo-container{
+.logo-wrapper {
   display: flex;
   align-items: center;
 }
 
-.header-container{
+.nav-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   width: 100vw;
   height: 60px;
   background-color: #FCFCFC;
 }
 
-.logo-header{
+.logo-box {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   width: 110px;
   height: 60px;
   background-color: #0e8a78;
 }
 
-.logo{
-  margin-right: 2px;
+.logo-img {
   width: 90px;
+  margin-right: 2px;
 }
 
-.header-links{
+.nav-links {
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
-.header-link-a{
+.nav-link {
   font-size: 15px;
   padding: 12px;
   color: #0e8a78;
   text-decoration: none;
 }
 
-.contact-button{
+.btn-contact {
   font-size: 15px;
   width: 120px;
+  padding: 9px;
+  margin: 0 50px;
+  background-color: #0e8a78;
+  color: #FCFCFC;
+  border: none;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  padding: 9px;
-  margin: 0 50px;
-  cursor: pointer;
-  background-color: #0e8a78;
-  border: none;
-  color: #FCFCFC;
 }
 
-.background{
+.hero-section {
+  width: 100vw;
+}
+
+.hero-bg {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-  background-size: cover;
   background-image: url(/img/background.jpg);
+  background-size: cover;
   width: 100vw;
   height: 350px;
-  flex-direction: column;
 }
 
-.hero-section-text1{
-  padding: 20px 0;
+.hero-title {
+  font-size: 30px;
   font-weight: 600;
   color: #FCFCFC;
-  font-size: 30px;
+  padding: 20px 0;
 }
 
-.hero-section-text2{
+.hero-description {
+  font-size: 17px;
+  color: #FCFCFC;
   text-align: center;
   max-width: 550px;
-  color: #FCFCFC;
-  font-size: 17px;
   padding-bottom: 20px;
 }
 
-.main-container{
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 60vh;
   padding: 0 100px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-.main-text1{
-  padding: 40px 0 0 0;
+.content-title {
   font-size: 30px;
+  padding-top: 40px;
 }
 
-.main-text2{
-  padding: 20px 0;
+.content-paragraph {
+  font-size: 17px;
   max-width: 700px;
-  font-size: 17px;
+  padding: 20px 0;
 }
 
-.main-text3{
-  padding: 20px 0;
-  max-width: 600px;
+.content-paragraph2 {
   font-size: 17px;
+  max-width: 600px;
+  padding: 20px 0;
 }
