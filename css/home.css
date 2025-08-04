@@ -189,34 +189,3 @@ hr {
   align-items: center;
 }
 
-.product-card {
-  background-size: cover;
-  background-position: center;
-}
-
-.card1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  background-image: url(/img/codenextbg.jpg);
-  padding: 0 10px;
-  text-align: center;
-}
-
-.card2,
-.card3 {
-  height: 200px;
-  background-image: url(/img/icons.jpg);
-}
-
-.card-title {
-  color: #FCFCFC;
-  font-weight: 600;
-}
-
-.card-description {
-  font-size: 13px;
-  color: #FCFCFC;
-  max-width: 350px;
-}
