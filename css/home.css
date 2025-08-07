@@ -209,7 +209,7 @@ hr {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 32%);
+  grid-template-columns: repeat(3, 25%);
   grid-template-rows: 300px;
   margin: 20px 0;
   justify-content: center;
@@ -289,7 +289,7 @@ hr {
 
 .section-client{
    padding: 0 150px;
-   margin-bottom: 200px;
+   margin-bottom: 120px;
 }
 
 .client-container{
@@ -315,6 +315,7 @@ hr {
 }
 
 .client-grid-container{
+  height: 410px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px;
@@ -331,6 +332,7 @@ hr {
 }
 
 .client-grid3{
+  height: 205%;
   background-color: #f3f3f3;
 }
 
