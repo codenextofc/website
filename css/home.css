@@ -288,11 +288,12 @@ hr {
 }
 
 .section-client{
-   padding: 0 100px;
+   padding: 0 150px;
    margin-bottom: 200px;
 }
 
 .client-container{
+  height: 200px;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -316,6 +317,29 @@ hr {
 .client-grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 200px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.client-grid1{
+  background-color: #f3f3f3;
+}
+
+.client-grid2{
+  background-color: #f3f3f3;
+}
+
+.client-grid3{
+  background-color: #f3f3f3;
+}
+
+.client-grid4{
+  background-color: #f3f3f3;
+}
+
+.client-grid5{
+  background-color: #f3f3f3;
 }
 
 .section-form{
