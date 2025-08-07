@@ -54,7 +54,12 @@ hr {
   text-decoration: none;
 }
 
+.nav-link p{
+    font-weight: 500;
+}
+
 .btn-contact {
+  border-radius: 5px;
   font-size: 15px;
   width: 120px;
   padding: 9px;
@@ -66,7 +71,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
 }
 
 .hero-section {
