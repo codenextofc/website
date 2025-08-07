@@ -177,7 +177,7 @@ hr {
 
 .section-products {
   padding: 0 100px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .products-text{
@@ -210,7 +210,7 @@ hr {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 25%);
-  grid-template-rows: 300px;
+  grid-template-rows: 250px;
   margin: 20px 0;
   justify-content: center;
   align-items: center;
@@ -289,7 +289,7 @@ hr {
 
 .section-client{
    padding: 0 150px;
-   margin-bottom: 120px;
+   margin-bottom: 100px;
 }
 
 .client-container{
@@ -324,24 +324,118 @@ hr {
 }
 
 .client-grid1{
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
   background-color: #f3f3f3;
 }
 
 .client-grid2{
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
   background-color: #f3f3f3;
 }
 
 .client-grid3{
-  height: 205%;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
   background-color: #f3f3f3;
+  height: 205%;
 }
 
 .client-grid4{
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
   background-color: #f3f3f3;
 }
 
 .client-grid5{
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
   background-color: #f3f3f3;
+}
+
+.client-grid1-title{
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.client-grid1-subtitle{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.client-grid2-title{
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.client-grid2-subtitle{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.client-grid3-subtitle{
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.client-grid3-title{
+  font-weight: 600;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.client-grid4-title{
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.client-grid4-subtitle{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.client-grid5-title{
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.client-grid5-subtitle{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.btn-contact2{
+    border-radius: 5px;
+  font-size: 15px;
+  width: 120px;
+  padding: 9px;
+  background-color: #0e8a78;
+  color: #FCFCFC;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-form{
