@@ -287,21 +287,35 @@ hr {
   font-size: 17px;
 }
 
-.section-cta{
+.section-client{
    padding: 0 100px;
-   margin-bottom: 120px;
+   margin-bottom: 200px;
 }
 
-.cta-title{
+.client-container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-title{
+  text-align: center;
   padding: 10px 0;
   font-size: 30px;
   font-weight: 600;
 }
 
-.cta-subtitle{
+.client-subtitle{
+  text-align: center;
   padding-bottom: 20px;
   font-size: 17px;
   max-width: 800px;
+}
+
+.client-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .section-form{
