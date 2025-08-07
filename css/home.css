@@ -344,23 +344,23 @@ hr {
 }
 
 .input-row1{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .input-row2{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .input-row3{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .input-row4{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .input-row5{
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .input-row6{
@@ -377,7 +377,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 25vw;
-  height: 40px;
+  height: 50px;
 }
 
 .lastname{
@@ -390,7 +390,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 25vw;
-  height: 40px;
+  height: 50px;
 }
 
 .enterprise{
@@ -403,7 +403,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 50.5vw;
-  height: 40px;
+  height: 50px;
 }
 
 .enterprise-niche{
@@ -416,7 +416,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 50.5vw;
-  height: 40px;
+  height: 50px;
 }
 
 .telephone{
@@ -429,7 +429,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 50.5vw;
-  height: 40px;
+  height: 50px;
 }
 
 .email{
@@ -442,7 +442,7 @@ hr {
   background-color: #f3f3f3;
   padding: 10px;
   width: 50.5vw;
-  height: 40px;
+  height: 50px;
 }
 
 #describe{
