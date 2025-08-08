@@ -289,7 +289,7 @@ hr {
 
 .section-client{
    padding: 0 150px;
-   margin-bottom: 100px;
+   margin-bottom: 150px;
 }
 
 .client-container{
@@ -398,7 +398,7 @@ hr {
 
 .client-grid3-title{
   font-weight: 600;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 20px;
 }
 
@@ -603,8 +603,8 @@ hr {
 }
 
 .logogray{
-  padding: 100px 0 50px;
-  width: 400px;
+  padding: 70px 0 50px 0;
+  width: 300px;
 }
 
 .footer-firts-links a{
@@ -614,7 +614,7 @@ hr {
 }
 
 .footer-firts-links{
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -632,7 +632,7 @@ hr {
 }
 
 .footer-second-links{
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   list-style-type: none;
   display: flex;
   align-items: center;
