@@ -83,7 +83,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/background.jpg);
+  background-image: url(/front_end/img/background.jpg);
   background-size: cover;
   width: 100vw;
   height: 350px;
@@ -130,14 +130,14 @@ hr {
 
 .about-img1 {
   border-top-left-radius: 10px;
-  background-image: url(/img/womanimg.jpg);
+  background-image: url(/front_end/img/womanimg.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .about-img2 {
   border-bottom-right-radius: 10px;
-  background-image: url(/img/manimg.jpg);
+  background-image: url(/front_end/img/manimg.jpg);
   background-size: cover;
   background-position: center;
 }

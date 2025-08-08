@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="../css/home.css">
   <title>Codenext - Sua SaaS</title>
 </head>
 <body>
@@ -11,14 +11,14 @@
     <section class="header-main">
       <div class="logo-wrapper">
         <div class="logo-box">
-          <img class="logo-img" src="/img/Logo.png" alt="">
+          <img class="logo-img" src="/front_end/img/Logo.png" alt="">
         </div>
         <div class="nav-wrapper">
           <nav class="nav-links">
-            <a class="nav-link" href="/html/home.html"><p>Início</p></a>
-            <a class="nav-link" href="/html/sobre.html"><p>Sobre</p></a>
-            <a class="nav-link" href="/html/produtos.html"><p>Produtos</p></a>
-            <a class="nav-link" href="/html/cursos.html"><p>Cursos</p></a>
+            <a class="nav-link" href="/front_end/html/home.html"><p>Início</p></a>
+            <a class="nav-link" href="/front_end/html/sobre.html"><p>Sobre</p></a>
+            <a class="nav-link" href="/front_end/html/produtos.html"><p>Produtos</p></a>
+            <a class="nav-link" href="/front_end/html/cursos.html"><p>Cursos</p></a>
           </nav>
           <div class="nav-button-wrapper">
             <button class="btn-contact">Fale Conosco</button>
@@ -32,7 +32,7 @@
   <main>
     <section class="hero">
       <div class="hero-bg">
-        <img class="hero-logo" src="/img/Logo.png" alt="">
+        <img class="hero-logo" src="/front_end/img/Logo.png" alt="">
       </div>
     </section>
 
@@ -47,12 +47,12 @@
         <div class="about-text1">
           <p class="about-heading">Inovação em software</p>
           <p class="about-paragraph">A Codenext desenvolve plataformas SaaS escaláveis e eficientes. Nossa especialidade é criar a base tecnológica para o crescimento e a inovação de sua empresa, com foco total no sucesso do cliente.</p>
-          <a href="/html/sobre.html"><button class="btn-outline">Conheça-nos</button></a>
+          <a href="/front_end/html/sobre.html"><button class="btn-outline">Conheça-nos</button></a>
         </div>
         <div class="about-text2">
           <p class="about-heading">Missão e impacto</p>
           <p class="about-paragraph">Nossa missão é elevar a experiência do usuário através de tecnologia. Construímos plataformas intuitivas e rápidas, que se adaptam e evoluem constantemente, garantindo que sua solução esteja sempre à frente do mercado.</p>
-          <a href="/html/sobre.html"><button class="btn-outline">Saiba mais</button></a>
+          <a href="/front_end/html/sobre.html"><button class="btn-outline">Saiba mais</button></a>
         </div>
         <div class="about-img2"></div>
       </div>
@@ -99,7 +99,7 @@
         <p class="form-title">Entre em contato conosco</p>
         <p class="form-subtitle">Quer saber mais sobre nossos cursos, soluções ou solicitar um orçamento?</p>
         <p class="form-subtitle2"> Preencha o formulário e nossa equipe responderá o quanto antes com o suporte que você precisa.</p>
-        <form class="form-wrapper" action="#" autocomplete="off">
+        <form class="form-wrapper" id="contact-form" autocomplete="off">
           <div class="input-row1">
             <input autocomplete="off" type="text" class="name" placeholder="Nome">
             <input autocomplete="off" type="text" class="lastname" placeholder="Sobrenome">
@@ -127,7 +127,7 @@
     <footer>
     <div class="footer-container">
       <div class="footer-logo">
-        <img class="logogray" src="/img/LogoGray.png" alt="">
+        <img class="logogray" src="/front_end/img/LogoGray.png" alt="">
       </div>
       <div class="footer-firts-links">
         <li><a href="">Termos e condições</a></li>
@@ -147,4 +147,59 @@
     </div>
   </footer>
 </body>
+<script>
+  // Seleciona o formulário pelo ID que adicionamos
+  const form = document.getElementById('contact-form');
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  // Adiciona um "ouvinte" para o evento de envio do formulário
+  form.addEventListener('submit', async (event) => {
+    // Impede o comportamento padrão do formulário (que é recarregar a página)
+    event.preventDefault();
+
+    // Desabilita o botão para evitar envios múltiplos
+    submitButton.disabled = true;
+    submitButton.innerText = 'Enviando...';
+
+    // Pega os valores de cada campo do formulário
+    const formData = {
+      nome: document.querySelector('.name').value,
+      sobrenome: document.querySelector('.lastname').value,
+      nomeEmpresa: document.querySelector('.enterprise').value,
+      nicho: document.querySelector('.enterprise-niche').value,
+      telefone: document.querySelector('.telephone').value,
+      email: document.querySelector('.email').value,
+      descricao: document.getElementById('describe').value
+    };
+
+    // Tenta enviar os dados para o seu servidor Node.js
+    try {
+      const response = await fetch('http://localhost:3000/enviar-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert(result.message); // Exibe "Email enviado com sucesso!"
+        form.reset(); // Limpa o formulário
+      } else {
+        // Exibe a mensagem de erro vinda do servidor
+        alert(`Falha no envio: ${result.message}`);
+      }
+
+    } catch (error) {
+      console.error('Erro na requisição:', error);
+      alert('Ocorreu um erro ao tentar conectar com o servidor. Verifique o console para detalhes.');
+    } finally {
+      // Reabilita o botão após o término da tentativa de envio
+      submitButton.disabled = false;
+      submitButton.innerText = 'Enviar';
+    }
+  });
+</script>
 </html>

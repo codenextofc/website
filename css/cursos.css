@@ -82,7 +82,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/background.jpg);
+  background-image: url(/front_end/img/background.jpg);
   background-size: cover;
   width: 100vw;
   height: 350px;
