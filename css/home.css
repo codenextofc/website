@@ -357,6 +357,41 @@ hr {
   color: #FCFCFC;
 }
 
+.section-courses{
+  margin-bottom: 120px;
+  padding: 0 100px;
+}
+
+.courses-container{
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-title{
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.courses-subtitle{
+  font-size: 17px;
+  text-align: left;
+  max-width: 500px;
+  padding-bottom: 20px;
+}
+
+.courses-image{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/img/studying.jpg);
+  width: 50%;
+  height: 60vh;
+}
+
 .section-form{
   margin-bottom: 60px;
   padding: 0 100px;
