@@ -517,17 +517,17 @@ hr {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: #0F1C2C;
   padding: 0 100px;
 }
 
-.logogray{
+.logo{
   padding: 70px 0 50px 0;
   width: 300px;
 }
 
 .footer-firts-links a{
-  color: #535353;
+  color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
@@ -549,7 +549,7 @@ hr {
 }
 
 .footer-second-links a{
-  color: #535353;
+  color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
@@ -573,6 +573,7 @@ hr {
 .copyright-text{
   font-size: 18px;
   padding-bottom: 50px;
+  color: #ffffff;
 }
 
 

@@ -54,11 +54,16 @@ hr {
   text-decoration: none;
 }
 
+.nav-link:hover{
+  text-decoration: underline;
+}
+
 .nav-link p{
     font-weight: 500;
 }
 
 .btn-contact {
+  font-weight: 600;
   border-radius: 5px;
   font-size: 15px;
   width: 120px;
@@ -71,6 +76,14 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#a{
+  text-decoration: none;
+}
+
+.btn-contact:hover{
+  background-color: #047060;
 }
 
 .hero-section {
@@ -140,27 +153,31 @@ hr {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: #0F1C2C;
   padding: 0 100px;
 }
 
-.logogray{
-  padding: 100px 0 50px;
-  width: 400px;
+.logo{
+  padding: 70px 0 50px 0;
+  width: 300px;
 }
 
 .footer-firts-links a{
-  color: #535353;
+  color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
 
 .footer-firts-links{
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-firts-links a:hover{
+  text-decoration: underline;
 }
 
 .footer-firts-links li{
@@ -168,17 +185,21 @@ hr {
 }
 
 .footer-second-links a{
-  color: #535353;
+  color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
 
 .footer-second-links{
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-second-links a:hover{
+  text-decoration: underline;
 }
 
 .footer-second-links li{
@@ -188,4 +209,5 @@ hr {
 .copyright-text{
   font-size: 18px;
   padding-bottom: 50px;
+  color: #ffffff;
 }
