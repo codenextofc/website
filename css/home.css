@@ -363,6 +363,7 @@ hr {
 }
 
 .courses-container{
+  width: 100%;
   gap: 30px;
   display: flex;
   flex-direction: row;
