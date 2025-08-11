@@ -389,7 +389,43 @@ hr {
   background-position: center center;
   background-size: cover;
   background-image: url(/img/studying.jpg);
-  width: 50%;
+  width: 60%;
+  height: 60vh;
+}
+
+.section-services{
+  margin-bottom: 120px;
+  padding: 0 100px;
+}
+
+.services-container{
+  width: 100%;
+  gap: 30px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title{
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.services-subtitle{
+  font-size: 17px;
+  text-align: left;
+  max-width: 500px;
+  padding-bottom: 20px;
+}
+
+.services-image{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/img/tech.jpg);
+  width: 60%;
   height: 60vh;
 }
 

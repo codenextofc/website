@@ -102,6 +102,7 @@ hr {
 }
 
 .hero-title {
+  text-align: center;
   max-width: 60vw;
   font-size: 30px;
   font-weight: 600;
@@ -118,34 +119,92 @@ hr {
   max-width:40vw;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.section-undertaking{
+  padding: 100px 100px;
+}
+
+.undertaking-container{
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.undertaking-card{
+  margin-right: -80px;
+  position: relative;
+  padding: 30px;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 35vw;
+  height: 60vh;
+  background-color: #f3f3f3;
+}
+
+.undertaking-image{
+  width: 60vw;
   height: 80vh;
-  padding: 0 100px;
-  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/img/colegas.jpg);
 }
 
-.content-title {
-  overflow-y: hidden;
+.undertaking-title{
+  padding: 10px 0;
   font-size: 30px;
-  padding-top: 40px;
+  font-weight: 600;
 }
 
-.content-paragraph {
-  overflow-y: hidden;
+.undertaking-subtitle{
   font-size: 17px;
-  max-width: 700px;
-  padding: 20px 0;
 }
 
-.content-paragraph2 {
-  overflow-y: hidden;
+.section-mission{
+  padding: 0 100px;
+  padding-bottom: 100px;
+}
+
+.mission-container{
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.mission-card{
+  margin-left: -120px;
+  position: relative;
+  padding: 30px;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 35vw;
+  height: 60vh;
+  background-color: #f3f3f3;
+}
+
+.mission-image{
+  width: 60vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/img/aperto.jpg);
+}
+
+.mission-title{
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mission-subtitle{
+  max-width: 90%;
   font-size: 17px;
-  max-width: 600px;
-  padding: 20px 0;
 }
 
 .footer-container{
