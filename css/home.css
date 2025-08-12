@@ -162,6 +162,7 @@ hr {
 
 .about-text1,
 .about-text2 {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -647,8 +648,3 @@ hr {
   padding-bottom: 50px;
   color: #ffffff;
 }
-
-
-
-
-
