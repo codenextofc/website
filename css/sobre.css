@@ -519,3 +519,7 @@ hr {
   padding-bottom: 50px;
   color: #ffffff;
 }
+
+@media (max-width: 1005px) {
+  .hero-bg
+}

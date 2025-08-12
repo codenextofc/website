@@ -648,3 +648,109 @@ hr {
   padding-bottom: 50px;
   color: #ffffff;
 }
+
+@media (max-width: 1005px) {
+ .nav-link p{
+  font-size: 15px;
+ }
+
+ .nav-link{
+  padding: 8px;
+ }
+  
+  .hero-bg{
+    width: 100vw;
+    height: 300px;
+  }
+
+  .hero-logo{
+    width: 300px;
+  }
+
+  .section-about{
+    padding: 0 30px;
+  }
+
+  .about-title{
+    font-size: 25px;
+  }
+
+  .about-description{
+    font-size: 15px;
+  }
+
+  .section-about{
+    padding: 0 50px;
+  }
+
+  .about-grid{
+    grid-template-rows: none;
+    justify-content: center;
+  }
+
+  .about-img1{
+    height: 30vh
+  }
+
+  .about-img2{
+    height: 30vh
+  }
+
+  .about-text1{
+    height: 30vh
+  }
+
+  .about-text2{
+    height: 30vh
+  }
+
+  .about-heading{
+    font-size: 25px;
+  }
+
+  .about-paragraph{
+    font-size: 13px;
+  }
+
+  .btn-outline{
+    padding: 2px;
+    font-size: 15px;
+  }
+
+  .products-title{
+    font-size: 25px;
+  }
+
+  .products-description{
+    font-size: 15px;
+  }
+
+  .products-subtitle{
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .product-icons{
+    width: 70px;
+  }
+
+  .card1, .card2, .card3{
+    height: 200px;
+  }
+
+  .products-grid{
+    margin: 0;
+  }
+
+  .card-text1{
+    font-size: 15px;
+  }
+
+  .card-text2{
+    font-size: 15px;
+  }
+
+  .card-text3{
+    font-size: 15px;
+  }
+}
