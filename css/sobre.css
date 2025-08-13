@@ -99,7 +99,7 @@ hr {
   background-image: url(/img/background.jpg);
   background-size: cover;
   width: 100vw;
-  height: 350px;
+  height: 300px;
 }
 
 .hero-title {
@@ -518,8 +518,4 @@ hr {
   font-size: 18px;
   padding-bottom: 50px;
   color: #ffffff;
-}
-
-@media (max-width: 1005px) {
-  .hero-bg
 }

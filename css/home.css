@@ -104,7 +104,7 @@ hr {
   background-image: url(/img/background.jpg);
   background-size: cover;
   width: 100vw;
-  height: 350px;
+  height: 300px;
   margin-bottom: 50px;
 }
 
@@ -159,6 +159,10 @@ hr {
   background-size: cover;
   background-position: center;
 }
+
+ .about-img2-fixed{
+    display: none;
+  }
 
 .about-text1,
 .about-text2 {
@@ -669,6 +673,7 @@ hr {
 
   .section-about{
     padding: 0 30px;
+    margin-bottom: 80px;
   }
 
   .about-title{
@@ -717,17 +722,23 @@ hr {
     font-size: 15px;
   }
 
+  .section-products{
+    margin-bottom: 80px;
+  }
+
   .products-title{
     font-size: 25px;
   }
 
   .products-description{
+    max-width: 100%;
     font-size: 15px;
   }
 
   .products-subtitle{
     text-align: center;
     font-size: 15px;
+    
   }
 
   .product-icons{
@@ -752,5 +763,312 @@ hr {
 
   .card-text3{
     font-size: 15px;
+  }
+
+  .section-video{
+    margin: 0px;
+    margin-bottom: 80px;
+  }
+
+  .video-title{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .video-subtitle{
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .video-wrapper{
+    width: 70vw;
+    height: 400px;
+  }
+
+  .section-courses{
+    margin-bottom: 80px;
+  }
+
+  .courses-image{
+    height: 30vh;
+  }
+
+  .courses-title{
+    font-size: 25px;
+  }
+
+  .courses-subtitle{
+    font-size: 15px;
+  }
+
+  .section-services{
+    margin-bottom: 80px;
+  }
+
+  .services-image{
+    height: 30vh;
+  }
+
+  .services-title{
+    font-size: 25px;
+  }
+
+  .services-subtitle{
+    font-size: 15px;
+  }
+
+  .form-title{
+    font-size: 25px;
+  }
+
+  .form-subtitle{
+    font-size: 15px;
+  }
+
+  .form-subtitle2{
+    font-size: 15px;
+  }
+
+  .logo{
+    width: 200px;
+  }
+
+  .footer-firts-links li a{
+    font-size: 15px;
+  }
+
+  .footer-second-links li a {
+    font-size: 15px;
+  }
+
+  .copyright-text{
+    font-size: 15px;
+  }
+
+  .about-img2-fixed{
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .logo-img{
+    display: none;
+  }
+
+  .hero-bg{
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .hero-logo{
+    width: 200px;
+  }
+
+  .about-us{
+    margin-bottom: 30px;
+  }
+
+  .about-title{
+    font-size: 20px;
+  }
+
+  .about-description{
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .about-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-img1{
+    border-radius: 0;
+    height: 25vh;
+  }
+
+  .about-heading{
+    font-size: 20px;
+  }
+
+  .about-paragraph{
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .about-text1{
+    padding: 10px 0;
+    height: 25vh;
+  }
+
+  .about-img2-fixed{
+    display: inherit;
+    background-image: url(/img/manimg.jpg);
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .about-img2{
+    display: none;
+  }
+
+  .about-text2{
+    height: 25vh;
+    padding: 10px 0;
+  }
+
+  .section-about{
+    margin-bottom: 50px;
+  }
+
+  .section-products{
+    padding: 0 50px;
+  }
+
+  .products-title{
+    font-size: 20px;
+  }
+
+  .products-grid{
+    gap: 30px;
+    grid-template-rows: 180px ;
+  }
+
+  .products-description{
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .products-subtitle{
+    font-size: 13px;
+  }
+
+  .product-icons{
+    width: 50px;
+  }
+
+  .card-text1{
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .card-text2{
+    font-size: 13px;
+  }
+
+  .card-text3{
+    font-size: 13px;
+  }
+
+  .section-video{
+    padding: 0 50px;
+  }
+
+  .video-title{
+    font-size: 20px;
+  }
+
+  .video-subtitle{
+    font-size: 13px;
+  }
+
+  .video-wrapper{
+    width: 80vw;
+    height: 300px;
+  }
+
+  .section-courses{
+    padding: 0 50px;
+  }
+
+  .courses-container{
+    flex-direction: column;
+  }
+
+  .courses-image{
+    width: 100%;
+  }
+
+  .courses-title{
+    font-size: 20px;
+  }
+
+  .courses-subtitle{
+    font-size: 13px;
+  }
+
+  .section-services{
+    padding: 0 50px;
+  }
+
+  .services-container{
+    flex-direction: column-reverse;
+  }
+
+  .services-image{
+    width: 100%;
+  }
+
+  .services-title{
+    font-size: 20px;
+  }
+
+  .services-subtitle{
+    font-size: 13px;
+  }
+
+  .services-subtitle2{
+    font-size: 13px;
+  }
+
+  .section-form{
+    padding: 0 50px;
+  }
+
+  .name{
+    width: 35vw;
+  }
+
+  .lastname{
+    width: 35vw;
+  }
+
+  .enterprise{
+    width: 70.5vw;
+  }
+
+  .enterprise-niche{
+    width: 70.5vw;
+  }
+
+  .telephone{
+    width: 70.5vw;
+  }
+
+  .email{
+    width: 70.5vw;
+  }
+
+  #describe{
+    width: 70.5vw;
+  }
+
+  .footer-container{
+    padding: 0 50px;
+  }
+
+  .logo{
+    padding: 30px 0;
+  }
+
+  .footer-firts-links{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer-second-links{
+    flex-direction: column;
   }
 }
