@@ -137,7 +137,7 @@ hr {
 
 .section-about {
   padding: 0 100px;
-  margin: 50px 0 120px 0;
+  margin: 50px 0 100px 0;
 }
 
 .about-grid {
@@ -210,7 +210,7 @@ hr {
 
 .section-products {
   padding: 0 100px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .products-text{
@@ -306,7 +306,7 @@ hr {
 }
 
 .news-container{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .news-title{
@@ -321,7 +321,7 @@ hr {
 }
 
 .section-video{
-  margin: 120px 0;
+  margin: 100px 0;
   padding: 0 100px;
 }
 
@@ -363,7 +363,7 @@ hr {
 }
 
 .section-courses{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
   padding: 0 100px;
 }
 
@@ -399,7 +399,7 @@ hr {
 }
 
 .section-services{
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   padding: 0 100px;
 }
 
