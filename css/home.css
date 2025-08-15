@@ -51,7 +51,7 @@ hr {
     font-weight: 500;
 }
 
-.btn-contact {
+.btn {
   font-weight: 600;
   width: 120px;
   height: 40px;
@@ -64,13 +64,14 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 #a{
   text-decoration: none;
 }
 
-.btn-contact:hover{
+.btn:hover{
   background-color: #047060;
 }
 
@@ -78,6 +79,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.a-btn{
+  text-decoration: none;
 }
 
 .hero-bg {
@@ -103,10 +108,44 @@ hr {
 }
 
 .hero-title{
+  padding: 50px 0;
   font-size: 50px;
   font-weight: 400;
   color: #fff;
-  max-width:60%;
+  max-width:70%;
+}
+
+.hero-img{
+  padding: 30px 0;
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.hero-logo{
+  width: 200px;
+}
+
+.button-click {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.button-click-title {
+  font-size: 25px;
+  color: #FCFCFC;
+}
+
+.button-click-arrow {
+  border: 2px solid #FCFCFC;
+  border-radius: 100%;
+  padding: 10px;
+  width: 70px;
 }
 
 .about-us {
@@ -114,44 +153,44 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 100px;
+  padding: 0 30px;
   margin-bottom: 60px;
 }
 
-.about-title {
+.tajawal-black {
+  font-family: "Tajawal";
+  color: #000000;
   font-weight: 600;
-  font-size: 30px;
-  padding: 10px 0;
-  text-align: center;
+  font-size: 20px;
+  letter-spacing: 15px;
+  padding: 10px;
 }
 
 .about-description {
   font-size: 17px;
-  color: #0e8a78;
+  color: #000000;
   text-align: center;
-  max-width: 550px;
+  max-width: 50%;
 }
 
 .section-about {
-  padding: 0 100px;
+  padding: 0 30px;
   margin: 50px 0 100px 0;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 45vh 45vh;
+  grid-template-rows: 50vh 50vh;
 }
 
 .about-img1 {
-  border-top-left-radius: 10px;
   background-image: url(/img/womanimg.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .about-img2 {
-  border-bottom-right-radius: 10px;
   background-image: url(/img/manimg.jpg);
   background-size: cover;
   background-position: center;
@@ -595,11 +634,6 @@ hr {
   padding: 0 100px;
 }
 
-.logo{
-  padding: 70px 0 50px 0;
-  width: 300px;
-}
-
 .footer-firts-links a{
   color: #ffffff;
   font-size: 17px;
@@ -650,422 +684,3 @@ hr {
   color: #ffffff;
 }
 
-@media (max-width: 1005px) {
- .nav-link p{
-  font-size: 15px;
- }
-
- .nav-link{
-  padding: 8px;
- }
-  
-  .hero-bg{
-    width: 100vw;
-    height: 300px;
-  }
-
-  .hero-logo{
-    width: 300px;
-  }
-
-  .section-about{
-    padding: 0 30px;
-    margin-bottom: 80px;
-  }
-
-  .about-title{
-    font-size: 25px;
-  }
-
-  .about-description{
-    font-size: 15px;
-  }
-
-  .section-about{
-    padding: 0 50px;
-  }
-
-  .about-grid{
-    grid-template-rows: none;
-    justify-content: center;
-  }
-
-  .about-img1{
-    height: 30vh
-  }
-
-  .about-img2{
-    height: 30vh
-  }
-
-  .about-text1{
-    height: 30vh
-  }
-
-  .about-text2{
-    height: 30vh
-  }
-
-  .about-heading{
-    font-size: 25px;
-  }
-
-  .about-paragraph{
-    font-size: 13px;
-  }
-
-  .btn-outline{
-    padding: 2px;
-    font-size: 15px;
-  }
-
-  .section-products{
-    margin-bottom: 80px;
-  }
-
-  .products-title{
-    font-size: 25px;
-  }
-
-  .products-description{
-    max-width: 100%;
-    font-size: 15px;
-  }
-
-  .products-subtitle{
-    text-align: center;
-    font-size: 15px;
-    
-  }
-
-  .product-icons{
-    width: 70px;
-  }
-
-  .card1, .card2, .card3{
-    height: 200px;
-  }
-
-  .products-grid{
-    margin: 0;
-  }
-
-  .card-text1{
-    font-size: 15px;
-  }
-
-  .card-text2{
-    font-size: 15px;
-  }
-
-  .card-text3{
-    font-size: 15px;
-  }
-
-  .section-video{
-    margin: 0px;
-    margin-bottom: 80px;
-  }
-
-  .video-title{
-    text-align: center;
-    font-size: 25px;
-  }
-
-  .video-subtitle{
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .video-wrapper{
-    width: 70vw;
-    height: 400px;
-  }
-
-  .section-courses{
-    margin-bottom: 80px;
-  }
-
-  .courses-image{
-    height: 30vh;
-  }
-
-  .courses-title{
-    font-size: 25px;
-  }
-
-  .courses-subtitle{
-    font-size: 15px;
-  }
-
-  .section-services{
-    margin-bottom: 80px;
-  }
-
-  .services-image{
-    height: 30vh;
-  }
-
-  .services-title{
-    font-size: 25px;
-  }
-
-  .services-subtitle{
-    font-size: 15px;
-  }
-
-  .form-title{
-    font-size: 25px;
-  }
-
-  .form-subtitle{
-    font-size: 15px;
-  }
-
-  .form-subtitle2{
-    font-size: 15px;
-  }
-
-  .logo{
-    width: 200px;
-  }
-
-  .footer-firts-links li a{
-    font-size: 15px;
-  }
-
-  .footer-second-links li a {
-    font-size: 15px;
-  }
-
-  .copyright-text{
-    font-size: 15px;
-  }
-
-  .about-img2-fixed{
-    display: none;
-  }
-}
-
-@media (max-width: 599px) {
-  .logo-img{
-    display: none;
-  }
-
-  .hero-bg{
-    height: 250px;
-    margin-bottom: 30px;
-  }
-
-  .hero-logo{
-    width: 200px;
-  }
-
-  .about-us{
-    margin-bottom: 30px;
-  }
-
-  .about-title{
-    font-size: 20px;
-  }
-
-  .about-description{
-    font-size: 13px;
-    max-width: 100%;
-  }
-
-  .about-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .about-img1{
-    border-radius: 0;
-    height: 25vh;
-  }
-
-  .about-heading{
-    font-size: 20px;
-  }
-
-  .about-paragraph{
-    font-size: 13px;
-    max-width: 100%;
-  }
-
-  .about-text1{
-    padding: 10px 0;
-    height: 25vh;
-  }
-
-  .about-img2-fixed{
-    display: inherit;
-    background-image: url(/img/manimg.jpg);
-    width: 100%;
-    height: 25vh;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .about-img2{
-    display: none;
-  }
-
-  .about-text2{
-    height: 25vh;
-    padding: 10px 0;
-  }
-
-  .section-about{
-    margin-bottom: 50px;
-  }
-
-  .section-products{
-    padding: 0 50px;
-  }
-
-  .products-title{
-    font-size: 20px;
-  }
-
-  .products-grid{
-    gap: 30px;
-    grid-template-rows: 180px ;
-  }
-
-  .products-description{
-    font-size: 13px;
-    max-width: 100%;
-  }
-
-  .products-subtitle{
-    font-size: 13px;
-  }
-
-  .product-icons{
-    width: 50px;
-  }
-
-  .card-text1{
-    font-size: 13px;
-    max-width: 100%;
-  }
-
-  .card-text2{
-    font-size: 13px;
-  }
-
-  .card-text3{
-    font-size: 13px;
-  }
-
-  .section-video{
-    padding: 0 50px;
-  }
-
-  .video-title{
-    font-size: 20px;
-  }
-
-  .video-subtitle{
-    font-size: 13px;
-  }
-
-  .video-wrapper{
-    width: 80vw;
-    height: 300px;
-  }
-
-  .section-courses{
-    padding: 0 50px;
-  }
-
-  .courses-container{
-    flex-direction: column;
-  }
-
-  .courses-image{
-    width: 100%;
-  }
-
-  .courses-title{
-    font-size: 20px;
-  }
-
-  .courses-subtitle{
-    font-size: 13px;
-  }
-
-  .section-services{
-    padding: 0 50px;
-  }
-
-  .services-container{
-    flex-direction: column-reverse;
-  }
-
-  .services-image{
-    width: 100%;
-  }
-
-  .services-title{
-    font-size: 20px;
-  }
-
-  .services-subtitle{
-    font-size: 13px;
-  }
-
-  .services-subtitle2{
-    font-size: 13px;
-  }
-
-  .section-form{
-    padding: 0 50px;
-  }
-
-  .name{
-    width: 35vw;
-  }
-
-  .lastname{
-    width: 35vw;
-  }
-
-  .enterprise{
-    width: 70.5vw;
-  }
-
-  .enterprise-niche{
-    width: 70.5vw;
-  }
-
-  .telephone{
-    width: 70.5vw;
-  }
-
-  .email{
-    width: 70.5vw;
-  }
-
-  #describe{
-    width: 70.5vw;
-  }
-
-  .footer-container{
-    padding: 0 50px;
-  }
-
-  .logo{
-    padding: 30px 0;
-  }
-
-  .footer-firts-links{
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .footer-second-links{
-    flex-direction: column;
-  }
-}
