@@ -11,6 +11,18 @@
   font-weight: 300;
 }
 
+#progress-bar{
+  z-index: 1000;
+  position: fixed;
+  --progress: 0;
+  height: 5px;
+  width: var(--progress);
+  background: linear-gradient(to right, #0e8a78, #5CC9B3);
+  background-size: cover;
+  background-size: 200%;
+  background-position: center center;
+}
+
 .section-header{
   padding: 0 50px;
 }
@@ -99,6 +111,7 @@
 }
 
 .hero-bg {
+  background-attachment: fixed;
   padding: 0 50px;
   display: flex;
   flex-direction: row;
@@ -106,9 +119,10 @@
   align-items: center;
   background-image: url(/img/us-img.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 50px;
   gap: 40px;
 }
 
@@ -161,340 +175,153 @@
   width: 50px;
 }
 
-.section-undertaking{
-  padding: 100px 100px;
-}
-
-.undertaking-container{
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.undertaking-card{
-  margin-right: -80px;
-  position: relative;
-  padding: 30px;
-  text-align: left;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  width: 35vw;
-  height: 60vh;
-  background-color: #f3f3f3;
-}
-
-.undertaking-image{
-  width: 60vw;
-  height: 80vh;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(/img/colegas.jpg);
-}
-
-.undertaking-title{
-  padding: 10px 0;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.undertaking-subtitle{
-  font-size: 17px;
-}
-
-.section-mission{
-  padding: 0 100px;
-  padding-bottom: 100px;
-}
-
-.mission-container{
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.mission-card{
-  margin-left: -120px;
-  position: relative;
-  padding: 30px;
-  text-align: left;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  width: 35vw;
-  height: 60vh;
-  background-color: #f3f3f3;
-}
-
-.mission-image{
-  width: 60vw;
-  height: 80vh;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(/img/aperto.jpg);
-}
-
-.mission-title{
-  padding: 10px 0;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.mission-subtitle{
-  max-width: 95%;
-  font-size: 17px;
-}
-
-.section-offer{
-  padding: 0px 100px;
-  padding-bottom: 100px;
-}
-
-.offer-container{
-  gap: 10px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.left-card{
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  background-color: #f3f3f3;
-}
-
-.left-card-title{
-  padding: 10px 0;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.left-card-subtitle{
-  font-size: 17px;
-  padding-bottom: 20px;
-}
-
-.btn-contact2 {
-  font-weight: 600;
-  border-radius: 5px;
-  font-size: 15px;
-  width: 120px;
-  padding: 9px;
-  background-color: #0e8a78;
-  color: #FCFCFC;
-  border: none;
-  cursor: pointer;
+.fast-text-section{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
-.btn-contact2:hover{
-  background-color: #047060;
+.fast-title{
+  font-weight: 400;
+  font-size: 17px;
 }
 
-.right-card{
-  gap: 10px;
+.name-history-container{
+  font-weight: 400;
+  color: #fff;
+  background-color: #000000;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 60px 50px;
+  gap: 70px;
 }
 
-.grid-item{
+.text-line1 p{
+  width: 1fr;
+  padding: 10px 0;
+}
+
+.text-line2 p{
+  width: 1fr;
+  padding: 10px 0;
+}
+
+.text-line3 p{
+  width: 1fr;
+  padding: 10px 0;
+}
+
+.tajawal-black {
+  font-family: "Tajawal";
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 15px;
+}
+
+.section-start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.start-container{
+  padding: 100px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#start-main{
+  padding: 10px 0;
+}
+
+.start-title{
+  font-weight: 400;
   font-size: 17px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 20px 0;
+}
+
+.start-title2{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.section-courses{
+  margin-bottom: 80px;
+  padding: 0 50px;
+}
+
+.courses-container{
+  width: 100%;
+  gap: 30px;
   display: flex;
-  background-color: #f3f3f3;
-}
-
-.grid-icon{
-  padding-bottom: 10px;
-  width: 50px;
-}
-
-.grid-icon2{
-  padding-bottom: 7px;
-  width: 50px;
-}
-
-.section-form{
-  margin-bottom: 60px;
-  padding: 0 100px;
-}
-
-.form-container{
-  flex-direction: column;
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.form-title{
-  padding-bottom: 10px;
-  text-align: center;
+.courses-title{
+  padding: 10px 0;
   font-size: 30px;
   font-weight: 600;
+  text-align: left;
 }
 
-.form-subtitle{
+.courses-subtitle{
+  font-weight: 400;
   font-size: 17px;
-  text-align: center;
-  max-width: 600px;
-  padding-bottom: 5px;
-}
-
-.form-subtitle2{
-  text-align: center;
-  font-size: 17px;
-  padding-bottom: 30px;
-}
-
-.form-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.input-row1{
-  padding-bottom: 10px;
-}
-
-.input-row2{
-  padding-bottom: 10px;
-}
-
-.input-row3{
-  padding-bottom: 10px;
-}
-
-.input-row4{
-  padding-bottom: 10px;
-}
-
-.input-row5{
-  padding-bottom: 10px;
-}
-
-.input-row6{
+  text-align: left;
+  max-width: 500px;
   padding-bottom: 20px;
 }
 
-.name{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 25vw;
-  height: 40px;
+.courses-image{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/img/studying.jpg);
+  width: 60%;
+  height: 60vh;
 }
 
-.lastname{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 25vw;
-  height: 40px;
+.section-services{
+  margin-bottom: 100px;
+  padding: 0 50px;
 }
 
-.enterprise{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 50.5vw;
-  height: 40px;
+.services-container{
+  width: 100%;
+  gap: 30px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.enterprise-niche{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 50.5vw;
-  height: 40px;
-}
-
-.telephone{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 50.5vw;
-  height: 40px;
-}
-
-.email{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 10px;
-  width: 50.5vw;
-  height: 40px;
-}
-
-#describe{
-  font-size: 15px;
-  font-weight: 500;
-  outline-color: #0e8a78;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  background-color: #f3f3f3;
-  width: 50.5vw;
-  height: 100px;
-  resize: none;
-  padding: 70px 0 0 10px;
-}
-
-.btn-outline {
-  border-radius: 5px;
-  font-size: 17px;
-  height: 40px;
-  width: 120px;
-  border: 2px solid #0e8a78;
-  background-color: transparent;
-  color: #0e8a78;
+.services-title{
+  padding: 10px 0;
+  font-size: 30px;
   font-weight: 600;
-  cursor: pointer;
+  text-align: left;
 }
 
-.btn-outline:hover{
-  color: #FCFCFC;
-  background-color: #0e8a78;
-  transition: all 0.1s ease-in;
+.services-subtitle{
+  font-weight: 400;
+  font-size: 17px;
+  text-align: left;
+  max-width: 500px;
+  padding-bottom: 20px;
+}
+
+.services-image{
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/img/tech.jpg);
+  width: 60%;
+  height: 60vh;
 }
 
 .footer-container{
@@ -557,6 +384,6 @@
 
 .copyright-text{
   font-size: 18px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   color: #ffffff;
 }
