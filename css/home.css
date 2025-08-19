@@ -1,28 +1,39 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
+@font-face {
+  font-family: 'WF Visual Sans';
+  src: url('https://dhygzobemt712.cloudfront.net/Fonts/VF/WFVisualSansVF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Estilos globais e barra de progresso */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: "WF Visual Sans";
   font-weight: 300;
   scroll-behavior: smooth;
 }
 
-#progress-bar{
+#progress-bar {
   z-index: 1000;
   position: fixed;
   --progress: 0;
   height: 5px;
   width: var(--progress);
-  background: linear-gradient(to right, #0e8a78, #5CC9B3);
+  background: linear-gradient(to right, #30507a, #0e8a78, #5CC9B3);
   background-size: cover;
   background-size: 200%;
   background-position: center center;
 }
 
-.section-header{
+/* Seção de cabeçalho e navegação */
+.section-header {
   padding: 0 50px;
 }
 
@@ -35,7 +46,7 @@
   background-color: #FCFCFC;
 }
 
-.nav-button-wrapper a{
+.nav-button-wrapper a {
   text-decoration: none;
 }
 
@@ -51,12 +62,12 @@
   text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline;
 }
 
-.nav-link p{
-    font-weight: 500;
+.nav-link p {
+  font-weight: 500;
 }
 
 .btn {
@@ -64,7 +75,7 @@
   width: 120px;
   height: 40px;
   margin-right: 10px;
-  font-size: 15px;  
+  font-size: 15px;
   background-color: #0F1C2C;
   color: #FCFCFC;
   border: none;
@@ -73,6 +84,26 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #047060; /* azul */
+  z-index: -1;
+  transition: left 0.3s ease;
+}
+
+/* Hover ativa o movimento da esquerda para a direita */
+.btn:hover::before {
+  left: 0;
 }
 
 .btn-white {
@@ -80,7 +111,7 @@
   width: 120px;
   height: 40px;
   margin-right: 10px;
-  font-size: 15px;  
+  font-size: 15px;
   background-color: #fff;
   color: #0F1C2C;
   border: none;
@@ -91,21 +122,18 @@
   text-decoration: none;
 }
 
-#a{
+#a {
   text-decoration: none;
 }
 
-.btn:hover{
-  background-color: #047060;
-}
-
+/* Seção Hero (introdução) */
 .section-hero {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.a-btn{
+.a-btn {
   text-decoration: none;
 }
 
@@ -124,7 +152,7 @@
   gap: 40px;
 }
 
-.tajawal-white{
+.tajawal-white {
   font-family: "Tajawal";
   color: #fff;
   font-weight: 600;
@@ -132,15 +160,15 @@
   letter-spacing: 15px;
 }
 
-.hero-title{
+.hero-title {
   padding: 50px 0;
   font-size: 50px;
   font-weight: 400;
   color: #fff;
-  max-width:70%;
+  max-width: 70%;
 }
 
-.hero-img{
+.hero-img {
   padding: 30px 0;
   height: 100%;
   width: 30vw;
@@ -149,7 +177,7 @@
   justify-content: end;
 }
 
-.hero-logo{
+.hero-logo {
   width: 200px;
 }
 
@@ -167,10 +195,24 @@
 }
 
 .button-click-arrow {
-  border: 2px solid #FCFCFC;
-  border-radius: 100%;
+  margin-top: -1px;
+  margin-left: -2px;
   padding: 10px;
   width: 50px;
+}
+
+.border-arrow-black {
+  border-radius: 1000px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #000000;
+}
+
+.border-arrow {
+  border-radius: 1000px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fcfcfc;
 }
 
 .button-click-black {
@@ -187,12 +229,13 @@
 }
 
 .button-click-black-arrow {
-  border: 2px solid #000000;
-  border-radius: 100%;
+  margin-top: -1px;
+  margin-left: -2px;
   padding: 10px;
   width: 50px;
 }
 
+/* Seção "O que fazemos?" */
 .about-us {
   display: flex;
   flex-direction: column;
@@ -218,6 +261,7 @@
   max-width: 50%;
 }
 
+/* Seção "Sobre nós" */
 .section-about {
   padding: 0 50px;
   margin: 50px 0 100px 0;
@@ -241,9 +285,9 @@
   background-position: center;
 }
 
- .about-img2-fixed{
-    display: none;
-  }
+.about-img2-fixed {
+  display: none;
+}
 
 .about-text1,
 .about-text2 {
@@ -279,25 +323,26 @@
   cursor: pointer;
 }
 
-.btn-outline:hover{
+.btn-outline:hover {
   color: #FCFCFC;
   background-color: #0e8a78;
   transition: all 0.1s ease-in;
 }
 
-.btn-outline:not(:hover){
+.btn-outline:not(:hover) {
   transition: all ease-out 0.1s;
 }
 
+/* Seção de produtos (cards) */
 .section-products {
   background-color: #000000;
 }
 
-.products-container{
+.products-container {
   padding: 70px 50px;
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -306,7 +351,7 @@
   gap: 40px;
 }
 
-.products-subtitle{
+.products-subtitle {
   font-weight: 400;
   font-size: 17px;
   color: #FCFCFC;
@@ -314,20 +359,21 @@
   max-width: 60%;
 }
 
-.cards-title{
+.cards-title {
   padding: 10px 0;
   font-size: 30px;
   color: #fff;
   font-weight: 600;
 }
 
-.cards-subtitle{
+.cards-subtitle {
   font-weight: 400;
   font-size: 17px;
   color: #fff;
 }
 
-.video-container{
+/* Seção de vídeo */
+.video-container {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -340,7 +386,7 @@
   margin-bottom: 50px;
 }
 
-.video-title{
+.video-title {
   text-align: center;
   padding: 50px 0;
   font-size: 50px;
@@ -349,28 +395,84 @@
   max-width: 70%;
 }
 
-.section-cta{
-  padding: 0 50px;
+/* Seção de serviços (works) */
+.section-works {
+  padding: 50px 50px;
   margin-bottom: 50px;
 }
 
-.cta-subtitle{
+.works-container {
+  gap: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works-text {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.works-cards-container {
+  row-gap: 100px;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.works-grid {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.works-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.works-subtitle {
+  text-align: center;
+  max-width: 80%;
+  padding: 15px 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Seção de Chamada para Ação (CTA) */
+.section-cta {
+  margin: 70px 0 100px 0;
+}
+
+.cta-subtitle {
   font-weight: 400;
   font-size: 17px;
   max-width: 60%;
   padding: 20px 0;
 }
 
-.cta-container{
-  padding: 50px 0;
+.cta-container {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding: 50px 50px;
 }
 
-.section-courses{
+/* Seção de casos de sucesso */
+.section-cases {
   margin-bottom: 80px;
   padding: 0 50px;
 }
 
-.courses-container{
+.cases-container {
   width: 100%;
   gap: 30px;
   display: flex;
@@ -379,14 +481,14 @@
   justify-content: center;
 }
 
-.courses-title{
+.cases-title {
   padding: 10px 0;
   font-size: 30px;
   font-weight: 600;
   text-align: left;
 }
 
-.courses-subtitle{
+.cases-subtitle {
   font-weight: 400;
   font-size: 17px;
   text-align: left;
@@ -394,20 +496,21 @@
   padding-bottom: 20px;
 }
 
-.courses-image{
+.cases-image {
   background-position: center center;
   background-size: cover;
-  background-image: url(/img/studying.jpg);
+  background-image: url(/img/success.jpg);
   width: 60%;
   height: 60vh;
 }
 
-.section-services{
+/* Seção de serviços (services) - aparentemente duplicada/não usada */
+.section-services {
   margin-bottom: 100px;
   padding: 0 50px;
 }
 
-.services-container{
+.services-container {
   width: 100%;
   gap: 30px;
   flex-direction: row;
@@ -416,14 +519,14 @@
   justify-content: center;
 }
 
-.services-title{
+.services-title {
   padding: 10px 0;
   font-size: 30px;
   font-weight: 600;
   text-align: left;
 }
 
-.services-subtitle{
+.services-subtitle {
   font-weight: 400;
   font-size: 17px;
   text-align: left;
@@ -431,7 +534,7 @@
   padding-bottom: 20px;
 }
 
-.services-image{
+.services-image {
   background-position: center center;
   background-size: cover;
   background-image: url(/img/tech.jpg);
@@ -439,23 +542,23 @@
   height: 60vh;
 }
 
-.section-form{
-}
+/* Seção de formulário de contato */
+.section-form {}
 
-.input-row1{
+.input-row1 {
   flex-direction: row;
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
 }
 
-.form-title{
+.form-title {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.form-container{
+.form-container {
   padding: 100px;
   background-color: #000000;
   flex-direction: row;
@@ -464,7 +567,7 @@
   justify-content: center;
 }
 
-.form-subtitle{
+.form-subtitle {
   padding: 10px 0;
   font-size: 30px;
   color: #fff;
@@ -472,7 +575,7 @@
   padding-bottom: 30px;
 }
 
-.form-subtitle2{
+.form-subtitle2 {
   font-weight: 400;
   font-size: 17px;
   padding-bottom: 30px;
@@ -480,7 +583,7 @@
   max-width: 70%;
 }
 
-.form-wrapper{
+.form-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -488,7 +591,7 @@
   gap: 10px;
 }
 
-.name{
+.name {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -499,7 +602,7 @@
   height: 40px;
 }
 
-.lastname{
+.lastname {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -510,7 +613,7 @@
   height: 40px;
 }
 
-.enterprise{
+.enterprise {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -521,7 +624,7 @@
   height: 40px;
 }
 
-.enterprise-niche{
+.enterprise-niche {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -532,7 +635,7 @@
   height: 40px;
 }
 
-.telephone{
+.telephone {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -543,7 +646,7 @@
   height: 40px;
 }
 
-.email{
+.email {
   font-size: 15px;
   font-weight: 500;
   color: #FCFCFC;
@@ -554,7 +657,7 @@
   height: 40px;
 }
 
-#describe{
+#describe {
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -566,7 +669,8 @@
   padding: 70px 0 0 10px;
 }
 
-.footer-container{
+/* Rodapé */
+.footer-container {
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -575,14 +679,14 @@
   padding: 0 100px;
 }
 
-.footer-firts-links a{
+.footer-firts-links a {
   font-weight: 400;
   color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
 
-.footer-firts-links{
+.footer-firts-links {
   padding-bottom: 10px;
   list-style-type: none;
   display: flex;
@@ -590,27 +694,27 @@
   justify-content: center;
 }
 
-.footer-firts-links a:hover{
+.footer-firts-links a:hover {
   text-decoration: underline;
 }
 
-.footer-firts-links li{
-    padding: 0 10px;
+.footer-firts-links li {
+  padding: 0 10px;
 }
 
-.footer-second-links a{
+.footer-second-links a {
   font-weight: 400;
   color: #ffffff;
   font-size: 17px;
   text-decoration: none;
 }
 
-.logo{
+.logo {
   width: 300px;
   padding: 100px 0 30px 0;
 }
 
-.footer-second-links{
+.footer-second-links {
   padding-bottom: 50px;
   list-style-type: none;
   display: flex;
@@ -618,17 +722,16 @@
   justify-content: center;
 }
 
-.footer-second-links a:hover{
+.footer-second-links a:hover {
   text-decoration: underline;
 }
 
-.footer-second-links li{
-    padding: 0 10px;
+.footer-second-links li {
+  padding: 0 10px;
 }
 
-.copyright-text{
+.copyright-text {
   font-size: 18px;
   padding-bottom: 100px;
   color: #ffffff;
 }
-
