@@ -254,6 +254,7 @@
 }
 
 .about-description {
+  padding: 10px 0;
   font-weight: 400;
   font-size: 17px;
   color: #000000;
@@ -449,7 +450,7 @@
 
 /* Seção de Chamada para Ação (CTA) */
 .section-cta {
-  margin: 70px 0 100px 0;
+  margin: 50px 0 50px 0;
 }
 
 .cta-subtitle {
@@ -468,8 +469,8 @@
 
 /* Seção de casos de sucesso */
 .section-cases {
-  margin-bottom: 80px;
-  padding: 0 50px;
+  margin-bottom: 50px;
+  padding: 50px 50px;
 }
 
 .cases-container {
@@ -734,4 +735,119 @@
   font-size: 18px;
   padding-bottom: 100px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section-header{
+    padding: 0 30px;
+  }
+
+  .hero-bg{
+    padding: 0 30px;
+    height: 80vh;
+  }
+
+  .tajawal-white{
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  .hero-title{
+    font-size: 40px;
+    max-width: 100%;
+    padding: 40px 0;
+  }
+
+  .button-click-title{
+    font-size: 20px;
+  }
+
+  .tajawal-black{
+    font-size: 20px;
+  }
+
+  .section-about{
+    padding: 0 30px;
+  }
+
+  .about-description{
+    font-size: 15px;
+    max-width: 80%;
+  }
+
+  .about-paragraph{
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .about-grid{
+    grid-template-rows: 40vh 40vh;
+  }
+
+  .about-heading{
+    font-size: 25px;
+  }
+
+  .products-container{
+    padding: 50px 30px;
+  }
+
+  .products-subtitle{
+    font-size: 15px;
+  }
+
+  .cards-container{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-title{
+    font-size: 25px;
+  }
+
+  .cards-subtitle{
+    max-width: 80%;
+    font-size: 15px;
+  }
+
+  .video-title{
+    font-size: 40px;
+  }
+
+  .button-click{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-works{
+    padding: 30px 30px;
+  }
+
+  .works-title{
+    flex-wrap: nowrap;
+    font-size: 25px;
+  }
+
+  .works-subtitle{
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .cases-image{
+    height: 40vh;
+  }
+
+  .cases-title{
+    font-size: 25px;
+  }
+
+  .section-cases{
+    padding: 30px 30px;
+  }
+
+  .cases-subtitle{
+    font-size: 15px;
+  }
 }
