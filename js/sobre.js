@@ -5,3 +5,4 @@ function updateProgressBar(){
 }
 
 document.addEventListener('scroll', updateProgressBar);
+

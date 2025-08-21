@@ -62,7 +62,7 @@
   width: 25px;
 }
 
-.language-button{
+#language-button{
   background-color: #FCFCFC;
   border: none;
   cursor: pointer;
@@ -210,6 +210,15 @@
 
 .hero-logo {
   width: 200px;
+}
+
+.button-click-middle {
+  justify-content: center;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
 }
 
 .button-click {
