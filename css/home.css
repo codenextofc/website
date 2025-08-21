@@ -37,6 +37,37 @@
   padding: 0 50px;
 }
 
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.isotype-logo{
+  margin-right: 10px;
+  margin-bottom: -2px;
+  width: 70px;
+}
+
+.right-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-icon{
+  margin-top: 5px;
+  width: 25px;
+}
+
+.language-button{
+  background-color: #FCFCFC;
+  border: none;
+  cursor: pointer;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
