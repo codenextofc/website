@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home.css">
     <script src="/js/home.js"></script>
     <title>Codenext - Inovação e Tecnologia para transformar seu negócio</title>
 </head>
+
 <body>
     <div id="progress-bar"></div>
     <header>
         <section class="section-header">
             <div class="header-container">
-              <div class="nav-wrapper">
-                <nav class="nav-links">
-                    <a class="nav-link" href="/html/home.html"><p>Início</p></a>
-                    <a class="nav-link" href="/html/sobre.html"><p>Sobre</p></a>
-                    <a class="nav-link" href="/html/servicos.html"><p>Serviços</p></a>
-                    <a class="nav-link" href="/html/cursos.html"><p>Cursos</p></a>
-                </nav>
-            </div>
-            <div class="right-container">
-              <button onclick="alert('Essa função não está disponível')" id="language-button"><img class="language-icon" src="data:image/png;base64,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" alt=""></button>
-              <a class="a-btn" href="#form-link"><button class="btn">Fale conosco</button></a>
-            </div>
+                <div class="nav-wrapper">
+                    <nav class="nav-links">
+                        <a href="/html/home.html"><img class="isotype-logo" src="/img/isotipo.png" alt=""></a>
+                        <a class="nav-link" href="/html/home.html">
+                            <p>Início</p>
+                        </a>
+                        <a class="nav-link" href="/html/sobre.html">
+                            <p>Sobre</p>
+                        </a>
+                        <a class="nav-link" href="/html/servicos.html">
+                            <p>Serviços</p>
+                        </a>
+                        <a class="nav-link" href="/html/cursos.html">
+                            <p>Cursos</p>
+                        </a>
+                    </nav>
+                </div>
+                <div class="right-container">
+                    <button onclick="alert('Essa função não está disponível')" id="language-button"><img class="language-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAMs0lEQVR4Aexae3BdZRHfPTepKW1z09ICJimvRgpJWqidUcaqVFBAHceiQhFH/vABtogK6IwzPv4QUf+AGWacoVAHZqwjUnyAzKg8BFuxgjpQTG9akZZXbqKUPnJTaluSe9bfnt578+13zrk5NwnMIN759n67++3ut9+e731OQG/y3/8D8CbvAPS69YD8wt5FcxcufU++o/eS1oU932pd2Htfa2fvMxEAB/8bgEsiGci+Xg/mNQ1AvqPnXDTqRjR+OwntDCX8IzFtZOHvsNBHmKgrAuDgfxewMZKBrOpEurDxWgZj2gPQ1rnknLbO3g35zt49xPwwMV2Hxp/RcCOEzoh0YUNtqc022G7YzgQK0xaAto7us/DE7hKSTUL0adR7LGC60rFqU2Bb69C6psvwlAOQP2npKfnOntuEg614YquzOyb/JJL1R4F2ZtZjWq11aZ1ad2a9FMEpBQDjdA2Vw2eJ+ApK/u0W4r8kFN1RKvYvBlx5FApvE+Yf+3Ii9GfwdgMSEupE3egRaxIKM7MmHQBUfCPG9i0pNW1Gd/0gBXw6kyz1ZP5WKs6/0uPRyMCxnwPvr4BaYqZlzYdHuyJbRJtrBS7CdEvki8trAG84APPnL56DSeke0sktVhFvRVBWl4qFlSPF/vvxBL8IkZmAahpuotxFRJvGqozxfNNYToKPgz4AqKaZoy0zrlJbahN1XoqCpwA2wRf1SX2zBRNTDQVg3ondPaMtzVtgdhXAS3JFqbjt7aXBwt1RQXf3DBa5OsIrf8x8/d7i3wcrZCzbN9hXJOIbyPzkGoItZZUGChsRiGUkHOtBKF+lvqmPwDOnzAHQ6JbD4GewvATgpl1hSCtKxf4fucy2A7lPgV4AqKbh2TJ7XZVIy4MZM25F2SuAajqurcSfrBKalwa3rdc6ge8CuGmJ+rhgQfdsl1kPzxwARHcDDPmNf3CsmVYcGCroZIXi8YRxe9k4pZjcWiw+dkixerD/2SdKJHSbKyNsA6BlWudYU/hu4A8C3LTk1bcEP3EZ9fBMAahMMrbbC60rFQsXHHyu8JJfQf7EJXPRiPe5fCG63aXr4aEEpjdB9v3zurpakZt08Pnt/1YfMDdor3HLVlV8dnmJ+IQBgKE1qOA6T/tBjPW1Hm+cDMNPgMgBqqlvpNifea0/MNT3NBQLgGrKhUdmfqxK+DnmhjUI+EOGrxNjR+8awyMin64bADzJU9F4f6nbhW5/uW/I0MIXu7Sw/Nyls+A4I/zSyIloUA3LJcaaQ/UJexKHq0skNmoOJ4bWDQCF9HVfIwzp8qRuX5NbvrwZQVtZoxURukuzRoA5+IUrjyF0LuhUf3U4hKFoECDmpHI51ganlFINtrV3L8M29fOuMGH50cnH8Dyidffhs8BqBlTTC410/6rS/oE+HQJ7qjTymW0dPf4kDPZ4OjDUv0V9HOcoxle04ZyiWBKkBkBygR+5p3T5STJieBK809L0mKEbIx51xYXpHS6dhFd8NJsloVhbaqqJAYiOnUKX1KQUYfqBZhNBQGKchNNTCIA8butjY9uWOZTvKw5QUZsckSqaGAB0/c9WBSr5Zsy0Gyt43QxjFUPHEWGZdAACznm6vNyxnIpWfDVnh5DlM0kKiQFAIz7kCmMW/75LT4AvcstbpbXg0g3hzc19Vl4WWzqdwkbM9FgWMm2qasYCoNdYKHQvM3aPDPQ/AN6EaU77afMh5B5+9mXZ/UEnMUW7QqL/OIXHYGme69CpKCbe+1HoHqXnV9oG9niKBQBP/8PjxcCEfoP/TCnIzTjZCvILlp4UZfb7XC6flNWKiPzWynKsF8QCwOwLBZ4Ra9JQoXgBkOdN+SQIbIhsEINc5gAweb4H8WFgAtDa2dNFRKcDqklmSXP2AARsAiDM1vmq1QZyEXrRFQ9FMgegZYyt77hoxS2WmaNMAHKce6tbGfDHh4aecMcgWHWSiDt3EJO4G5k6iulFzNZGIDI/XdqWvPRS30FwzFIaUNAOXi2ZAIRh6AfgXzXJDAguK1tcMSae8Pjryifh2MQYG+hVpo4kHY9n2uC30QSAmUwA0ACj7BmOkXjixjksRcb5mEIGBmwaG0xk6pjQhJBpg99GEwBhOsM1iAZchbs2yQok9AVXH/QtWXXT5IToZnJ+oK9Ok03iYxyaYzva6M5xZAJAIuYSw6n3DYvGHBfRU2WNbQNQY795EBsA5j/8zzed+RG3jSYALLTDLdQxjDs3zgqYoH7o6mO8fimrbpocbH7F2GS+OU02ia9tcPXRxn+4tAmAeDMmJhCzKriKSTgmTbNnwAzunguSVCbkwadZrhBsmjrcskTcW9lgz6wKJgBBEJhCGDwBkDlhzTbOMfExmZXTBa2NkHRzky4dLzEP0W+jCUBZyn4Azm5vX24diFcwzuHQ2/lx5l3buBEPC8izwV4dnrxDHn/8Uu09ZzssXHOGQy5tAoAjpF5du2OED/Jo7ATlGnDxXJkGXDoUWujSk8KFzd5f2NZRz+bhJrG+M+3AZYk5XZoAqDH/CClUtsdjFUoBOGcOLtjHn5gimpmNMW9sNAVlU0c9Q0KhDUBI9nAE5VgAmMic/zl2PIZWSsJFqu+ccT5FrS4bK8kprsAxYd7e/buFHu77jmCatql4LAClwX5dJ/dqYQWOa13Yc0EFr5uVXty2HwLuRDivoTkEym7C8XweaHclGS5meL8IHYLuhciPA1TTnuHB/tg+JxYAlUYvMF2Fhf0rchVLA51HamWvBIfq3uXXBBMQkWCxZfNzlk6nmKzPGJ6mTVXNxAAQsf8icyXeEdprckr5CT1hSwL7nsAW1qVyFJoZHLfVT9ZVqBTi0kO/VTqnQkZZIHxHhHh/iQEYLm7bjE3Q0Q8dqgpsI1plx3M23wRh3E06AELsvQcQYzted4UjZHus0MaoTZViN0sMgApwOTTXyoj+snzHkrSPoVQlAqay5yRPOgB4CEY3SP7gKqq3+lfxUV/PVVkw47elVuQdh8f5NDy0fSsR2/f0LLfNae99F9X5DQ9u17t89xJj0dz27oZXg3ntvbqHcFeAQ/uLhbrvGOa096wg+Gjdk/Xwybwqc8sDl4jhAXm9gCgIaMOsU3qPj8mOM0Im0pWkxgmD3GU1IiNSZtKPLWvSmMR+DyIEJKZZJ3efEAS8IVaYy8Xa4MrUDQCWtWdxmlrrKgBf1DRK+rkM0JTEbF5tQyrbBArBWmIyOkEovs2aqCJNo4H6dKriNRBaW3qhr+7KUTcAaqg0WFiHINykuAPn5zt6/Q8nasXBWw79CkQZUEmybG4DwwBruF7Pn1lR1qzcdGTsHkWSALP+Ogz0D3hlN0a+e0yfnDAAqgBDX0V+L2A8Ma3BHdwDScNh386dIxB8GFBLZeYv14iJEA68XscP7dnztPv9YGRBu736gAdk7yKJ7sHdwNcioQn+MgVAbTQfHtWvL7Yp7sD5GA5bkiZGFrnTkSNsS9dW3h267BiuMtA13/awhPp5npHVOpvGgj+BeT7ATX0zjoTqq8tLxTMHQJ9ALgj1ez0/CIuCgLbkO3vM1yTDgwt+isnQPV634N3hNameVAogcy3QFkCU1AZsmWDmsRxrnRAwb3lAb4OPl7388nb3O0Ow01PmAKiJfS9u70dPWAHcDgcwiHh9vnPJk/mO3srktWksJP4euT+hazFefadrEnM6zjwN3dkECbP/9URHP62F7up8Z+/W+FIXmbhXfVMfIyrjX0MBUJvaEzC+LoKj/sSIYllGTBvh5CZMZBeOtJbXg+leYLRQSBuJVjaB76WVTQGX9csw8/RLc8Lb1ZbaRJ36sZXZ5ERGhG5Sn9S3iG7gL2hA1ohGEyOTN1nVRM5h4t/lRwJckIgdMkzL85177mx3bpoWLOiene/cq+O8t2YBCLbCO9SG2gJp9vagjyZd6gYLOkkfpRv8n3QAtB7crqyjXIC1V/RJK8sHHEc56WXLxQeDI4MYLncpvNqS00AlfAco+hIDNnyzSqNO1I0HsU6pycKUAqCV6kajVOy/EjP1MnRRdG/lZoI2DJfVEYi0ZdJQIRxstC6tU+tW1lRgygGoVj48uP2p0mDhUnTXlUykHyu7lypVscnme9UmE6/UOoZR12QN+XrTFoCqYT12DhcLl5eKhfl413geesVNeMr2hUtVuF7OtCPSFTlPbalNtV1PZTJl0x4A14nSYP8jJUxQmCu6EYSugIP3olGrheXbwnyfMO0SomdA/xr8bwJWRzJMXaoT6cKGa3O68dc0AK6zaNCu/QN9j6JRd48M9F8/MrDtoyMDha6RYuG0kYH+VeDfALg7khkomKtr1850469bAKbb8emy94YPwFQD8V8AAAD//y2mTLEAAAAGSURBVAMAKTGnvRpn4WIAAAAASUVORK5CYII=" alt=""></button>
+                    <a class="a-btn" href="#form-link"><button class="btn">Fale conosco</button></a>
+                </div>
             </div>
         </section>
     </header>
-
     <main>
         <section class="section-hero">
             <div class="hero-bg">
                 <div class="hero-text">
                     <p class="tajawal-white">CONHEÇA-NOS</p>
                     <p class="hero-title">A solução digital que você precisa, com a atenção que você merece</p>
-                    <span class="button-click"><a class="a-btn" href="/html/home.html"><p class="button-click-title">Saiba mais</p></a>
+                    <span class="button-click"><a class="a-btn" href="/html/home.html">
+                            <p class="button-click-title">Saiba mais</p>
+                        </a>
                         <div class="border-arrow">
-                            <a href=""><img class="button-click-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4ElEQVR4AeyYUXKDMAxEQ6/UHqD9751C7tT/9gDtmehuBjOMJwRIbGUVK2MFlIyN9lk2oJdD458A0HgCHCIDIgMaJxBLoPEEiE0wlkAsgcYJSC2BYRheYe+WcyIDYBT+C/HfOO9xNGkyADK1RysIMgC6rvsBhBMstSoQ0uDpKAOAAQECU98UghSAR0CQA2ANQRKAJQRZAFYQpAFYQJAHUBuCCwA1IbgBUAuCKwA1ILgDUBqCSwAlIbgFUAqCawAlIGwCgHdzVmp6HCWNIGA3vUWuAoBolqhYqTniIuqGEKfGesLn5C2crAJY6Pc0P68CQJGClZo3KGaKqRvCnNoJsX9N3sLJKgD2w0B/sF7VGCOMyxOHc6N4VpfOzrWvTQCuDfDo/7BHUTgthbJZPDu4BjCKn8/0LvGuAZQQ7xZAKfEuAZQU7w5AafGuAEA8Nzsa46bt3vDYKTcXd4FR/M23ulz03JcHUFM8QUgDqC1eGoCFeFkAVuIlAdwrnqL2mNQeYC2eoGQAQDwrT1VudRS6ZDIAsgCLPORkY150ZQCg2JIqTx84nz/xXQy81I8yACgIwll5Igi6JiYFwERxdpEAkAFpzo0MaG7KM8GRARmQ5tzIgOamPBMcGZABcefeG/A/AAAA///Eq8w6AAAABklEQVQDAC2ChpCbXX/qAAAAAElFTkSuQmCC" alt=""></a></span>
-                        </div>
+                            <a href=""><img class="button-click-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4ElEQVR4AeyYUXKDMAxEQ6/UHqD9751C7tT/9gDtmehuBjOMJwRIbGUVK2MFlIyN9lk2oJdD458A0HgCHCIDIgMaJxBLoPEEiE0wlkAsgcYJSC2BYRheYe+WcyIDYBT+C/HfOO9xNGkyADK1RysIMgC6rvsBhBMstSoQ0uDpKAOAAQECU98UghSAR0CQA2ANQRKAJQRZAFYQpAFYQJAHUBuCCwA1IbgBUAuCKwA1ILgDUBqCSwAlIbgFUAqCawAlIGwCgHdzVmp6HCWNIGA3vUWuAoBolqhYqTniIuqGEKfGesLn5C2crAJY6Pc0P68CQJGClZo3KGaKqRvCnNoJsX9N3sLJKgD2w0B/sF7VGCOMyxOHc6N4VpfOzrWvTQCuDfDo/7BHUTgthbJZPDu4BjCKn8/0LvGuAZQQ7xZAKfEuAZQU7w5AafGuAEA8Nzsa46bt3vDYKTcXd4FR/M23ulz03JcHUFM8QUgDqC1eGoCFeFkAVuIlAdwrnqL2mNQeYC2eoGQAQDwrT1VudRS6ZDIAsgCLPORkY150ZQCg2JIqTx84nz/xXQy81I8yACgIwll5Igi6JiYFwERxdpEAkAFpzo0MaG7KM8GRARmQ5tzIgOamPBMcGZABcefeG/A/AAAA///Eq8w6AAAABklEQVQDAC2ChpCbXX/qAAAAAElFTkSuQmCC" alt=""></a>
                     </span>
                 </div>
-                <div class="hero-img">
-                    <a class="a-btn" href="/html/home.html"><img class="hero-logo" src="/img/Logo.png" alt=""></a>
-                </div>
+                </span>
+            </div>
+            <div class="hero-img">
+                <a class="a-btn" href="/html/home.html"><img class="hero-logo" src="/img/Logo.png" alt=""></a>
+            </div>
             </div>
         </section>
-
         <section class="about-us">
             <p class="tajawal-black">OQUE FAZEMOS?</p>
             <p class="about-description">Impulsionamos negócios com soluções digitais completas, código escalável e parcerias estratégicas que aceleram a inovação.</p>
         </section>
-
         <section class="section-about">
             <div class="about-grid">
                 <div class="about-img1"></div>
@@ -69,7 +79,6 @@
                 <div class="about-img2"></div>
             </div>
         </section>
-
         <section class="section-products">
             <div class="products-container">
                 <p class="tajawal-white">POR QUE CODENEXT?</p>
@@ -90,19 +99,20 @@
                 </div>
             </div>
         </section>
-        
         <section class="section-video">
             <div class="video-container">
                 <p class="tajawal-white">COMO FAZEMOS?</p>
                 <p class="video-title">Entenda como nossa imersão no seu negócio dá início a um processo estratégico e eficiente</p>
-                <span id="btn-2" class="button-click-middle"><a class="a-btn" href="/html/home.html"><p class="button-click-title">Ver vídeo</p></a>
+                <span id="btn-2" class="button-click-middle"><a class="a-btn" href="/html/home.html">
+                        <p class="button-click-title">Ver vídeo</p>
+                    </a>
                     <div class="border-arrow">
-                        <a href=""><img class="button-click-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4ElEQVR4AeyYUXKDMAxEQ6/UHqD9751C7tT/9gDtmehuBjOMJwRIbGUVK2MFlIyN9lk2oJdD458A0HgCHCIDIgMaJxBLoPEEiE0wlkAsgcYJSC2BYRheYe+WcyIDYBT+C/HfOO9xNGkyADK1RysIMgC6rvsBhBMstSoQ0uDpKAOAAQECU98UghSAR0CQA2ANQRKAJQRZAFYQpAFYQJAHUBuCCwA1IbgBUAuCKwA1ILgDUBqCSwAlIbgFUAqCawAlIGwCgHdzVmp6HCWNIGA3vUWuAoBolqhYqTniIuqGEKfGesLn5C2crAJY6Pc0P68CQJGClZo3KGaKqRvCnNoJsX9N3sLJKgD2w0B/sF7VGCOMyxOHc6N4VpfOzrWvTQCuDfDo/7BHUTgthbJZPDu4BjCKn8/0LvGuAZQQ7xZAKfEuAZQU7w5AafGuAEA8Nzsa46bt3vDYKTcXd4FR/M23ulz03JcHUFM8QUgDqC1eGoCFeFkAVuIlAdwrnqL2mNQeYC2eoGQAQDwrT1VudRS6ZDIAsgCLPORkY150ZQCg2JIqTx84nz/xXQy81I8yACgIwll5Igi6JiYFwERxdpEAkAFpzo0MaG7KM8GRARmQ5tzIgOamPBMcGZABcefeG/A/AAAA///Eq8w6AAAABklEQVQDAC2ChpCbXX/qAAAAAElFTkSuQmCC" alt=""></a></span>
-                    </div>
+                        <a href=""><img class="button-click-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4ElEQVR4AeyYUXKDMAxEQ6/UHqD9751C7tT/9gDtmehuBjOMJwRIbGUVK2MFlIyN9lk2oJdD458A0HgCHCIDIgMaJxBLoPEEiE0wlkAsgcYJSC2BYRheYe+WcyIDYBT+C/HfOO9xNGkyADK1RysIMgC6rvsBhBMstSoQ0uDpKAOAAQECU98UghSAR0CQA2ANQRKAJQRZAFYQpAFYQJAHUBuCCwA1IbgBUAuCKwA1ILgDUBqCSwAlIbgFUAqCawAlIGwCgHdzVmp6HCWNIGA3vUWuAoBolqhYqTniIuqGEKfGesLn5C2crAJY6Pc0P68CQJGClZo3KGaKqRvCnNoJsX9N3sLJKgD2w0B/sF7VGCOMyxOHc6N4VpfOzrWvTQCuDfDo/7BHUTgthbJZPDu4BjCKn8/0LvGuAZQQ7xZAKfEuAZQU7w5AafGuAEA8Nzsa46bt3vDYKTcXd4FR/M23ulz03JcHUFM8QUgDqC1eGoCFeFkAVuIlAdwrnqL2mNQeYC2eoGQAQDwrT1VudRS6ZDIAsgCLPORkY150ZQCg2JIqTx84nz/xXQy81I8yACgIwll5Igi6JiYFwERxdpEAkAFpzo0MaG7KM8GRARmQ5tzIgOamPBMcGZABcefeG/A/AAAA///Eq8w6AAAABklEQVQDAC2ChpCbXX/qAAAAAElFTkSuQmCC" alt=""></a>
                 </span>
             </div>
+            </span>
+            </div>
         </section>
-
         <section class="section-works">
             <div class="works-container">
                 <div class="works-text">
@@ -113,7 +123,7 @@
                     <div class="works-grid">
                         <img class="works-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiMwMDdhNjUiIGQ9Ik05MjggMTQwSDk2Yy0xNy43IDAtMzIgMTQuMy0zMiAzMnY0OTZjMCAxNy43IDE0LjMgMzIgMzIgMzJoMzgwdjExMkgzMDRjLTguOCAwLTE2IDcuMi0xNiAxNnY0OGMwIDQuNCAzLjYgOCA4IDhoNDMyYzQuNCAwIDgtMy42IDgtOHYtNDhjMC04LjgtNy4yLTE2LTE2LTE2SDU0OFY3MDBoMzgwYzE3LjcgMCAzMi0xNC4zIDMyLTMyVjE3MmMwLTE3LjctMTQuMy0zMi0zMi0zMm0tNDAgNDg4SDEzNlYyMTJoNzUyeiIvPjwvc3ZnPg==" alt="">
                         <p class="grid-title">Websites</p>
-                        <p class="grid-subtitle">Sites institucionais, blogs e portais com design responsivo e foco em SEO e usabilidade.</p> 
+                        <p class="grid-subtitle">Sites institucionais, blogs e portais com design responsivo e foco em SEO e usabilidade.</p>
                     </div>
                     <div class="works-grid">
                         <img class="works-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDdhNjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Im0xOS4yNiA5LjY5NmwxLjM4NSA5QTIgMiAwIDAgMSAxOC42NyAyMUg1LjMzYTIgMiAwIDAgMS0xLjk3Ny0yLjMwNGwxLjM4NS05QTIgMiAwIDAgMSA2LjcxNiA4aDEwLjU2OGEyIDIgMCAwIDEgMS45NzcgMS42OTZNMTQgNWEyIDIgMCAxIDAtNCAwIi8+PC9zdmc+" alt="">
@@ -142,7 +152,6 @@
                     </div>
                 </div>
         </section>
-
         <section class="section-cases">
             <div class="cases-container">
                 <div class="cases-image">
@@ -154,17 +163,18 @@
                 </div>
             </div>
         </section>
-
         <section class="section-cta">
             <div class="cta-container">
                 <p class="tajawal-black">E AGORA?</p>
                 <p class="cta-subtitle">Se você chegou até aqui, é porque está pronto para transformar sua ideia em realidade. Preencha nosso formulário e conte pra gente o que você precisa. Vamos criar algo incrível juntos?</p>
-                <span class="button-click-black"><a class="a-btn" href="/html/home.html"><p class="button-click-black-title">Fale conosco</p></a>
+                <span class="button-click-black"><a class="a-btn" href="/html/home.html">
+                        <p class="button-click-black-title">Fale conosco</p>
+                    </a>
                     <div class="border-arrow-black">
-                        <a href=""><img class="button-click-black-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACYElEQVR4AeyYzUoDMRSFx59XEReCr+FaURQFEURBV27FhbgR1y4UFERERFBc+CaCCxe+ij/fKS1MUx1tmwz3diL3JJMxM7nnmyRtZ7xo+F8G0PAJUOQZkGdAwwnkJdDwCZA3wbwEDC2BOXJ5Qa9oDdUSVmaA8jjF8SyaQbdoByUPDZx8kH8OMBn0O6OdHIIVAJ+YPUBhJIdgBYCM31NsozCSQrAEQMYvKQThi7oc0SCUb6pjawCUkyBscFALBIsA8F7cUNQCwSoA/NcDwTKAWiBYB5AcggcASSF4AdCBsMpB1E8HTwDwXujLUlQI3gBEh+ARQFQIXgFEg+AZQBQI3gGUIXyoUdK/fkCNAgB51qfDEgd9Q6gCsMgN35A+dz3oiVwnUBiaCSvhyU67CsARnaaR62gnf0z9o9cfT9J51GLsN0NVAA656B2NQuxjQu8dqbqjCsAjXaeQ6HnQArmGmyCnil0KbZJUvVEFoLe33TPzpPaAwk1Q5s85/2uMAgDt8AOZFxXvAGT+DiN9P3muaYVnAB3z2p9aZtrFn9O+3a9VeQUQxbwIeAQQzbxHAFHNewOwTsLa8IZa89yjK7wsAZm/JvOo5rlf4QFAMvMeACQ1bx1AcvOWAWyR3EBrnuv6Cot7gMxf4CL6hsc9e8IagI75MNG+vt6GF1e1LQFYJlE9eaquSGZeo1gBoDxOlFCgpOY1lgZWbUF681zOI7l5DWYFgN7X7SmhtjapK9/k8P8oYQWAzDxTaOeXrjiuJSwBqMVwOEgGEBJpWjvPgKY98dBvngEhkaa18wzw/sSHzf8bAAD//wIsxRMAAAAGSURBVAMAhimSgZAEpMgAAAAASUVORK5CYII" alt=""></a></span>
+                        <a href=""><img class="button-click-black-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACYElEQVR4AeyYzUoDMRSFx59XEReCr+FaURQFEURBV27FhbgR1y4UFERERFBc+CaCCxe+ij/fKS1MUx1tmwz3diL3JJMxM7nnmyRtZ7xo+F8G0PAJUOQZkGdAwwnkJdDwCZA3wbwEDC2BOXJ5Qa9oDdUSVmaA8jjF8SyaQbdoByUPDZx8kH8OMBn0O6OdHIIVAJ+YPUBhJIdgBYCM31NsozCSQrAEQMYvKQThi7oc0SCUb6pjawCUkyBscFALBIsA8F7cUNQCwSoA/NcDwTKAWiBYB5AcggcASSF4AdCBsMpB1E8HTwDwXujLUlQI3gBEh+ARQFQIXgFEg+AZQBQI3gGUIXyoUdK/fkCNAgB51qfDEgd9Q6gCsMgN35A+dz3oiVwnUBiaCSvhyU67CsARnaaR62gnf0z9o9cfT9J51GLsN0NVAA656B2NQuxjQu8dqbqjCsAjXaeQ6HnQArmGmyCnil0KbZJUvVEFoLe33TPzpPaAwk1Q5s85/2uMAgDt8AOZFxXvAGT+DiN9P3muaYVnAB3z2p9aZtrFn9O+3a9VeQUQxbwIeAQQzbxHAFHNewOwTsLa8IZa89yjK7wsAZm/JvOo5rlf4QFAMvMeACQ1bx1AcvOWAWyR3EBrnuv6Cot7gMxf4CL6hsc9e8IagI75MNG+vt6GF1e1LQFYJlE9eaquSGZeo1gBoDxOlFCgpOY1lgZWbUF681zOI7l5DWYFgN7X7SmhtjapK9/k8P8oYQWAzDxTaOeXrjiuJSwBqMVwOEgGEBJpWjvPgKY98dBvngEhkaa18wzw/sSHzf8bAAD//wIsxRMAAAAGSURBVAMAhimSgZAEpMgAAAAASUVORK5CYII" alt=""></a>
+                </span>
             </div>
         </section>
-
         <section id="form-link" class="section-form">
             <div class="form-container">
                 <div class="form-title">
@@ -197,25 +207,59 @@
             </div>
         </section>
     </main>
-    
     <footer>
         <div class="footer-container">
-            <div class="footer-logo">
-                <img class="logo" src="/img/Logo.png" alt="">
+            <div class="left-footer-container">
+                <a href="/html/home.html"><img class="logo-footer" src="/img/Logo.png" alt=""></a>
+                <p class="logo-title">Empresa Desenvolvedora de Software</p>
+                <div class="social-media-container">
+                    <a href=""><img class="social-media-icons" src="data:image/png;base64,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" alt=""></a>
+                    <a href=""><img class="social-media-icons" src="data:image/png;base64,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" alt=""></a>
+                    <a href=""><img class="social-media-icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADy0lEQVR4AeyaXYhNURTH7/VEXkjU+HiRiRca0jyRKSUpkuZB82BEUYN5oUwpI15QlBEiahTNwzwpnymfL5IwD4pJeSDlQXnxEeX6rZqZ9r13rfN5u/Y5c6b1b++z1tp7r///7HPvOWfulNIk/ysEmOQboFTsgGIHBChQqVR2gKvgIXiUMUjNUnt3AEX7EoDsdQZeAdtAB1iTMUjNUvsgXAapXTX1M4ABK8juAnmxbjgt1cioApC4EuTN2jVClgBzteSM++Zr9VsCWH5tjqz4VE6qMyuMGlFnIUAjVMzyHNYOqEQkNULeXrAObAYnwE/go6mcLAGiEBgul8tt4By4D26APgYuBl+Al1ZbVFIBPjDRdlBniPAR5y6QCbMEKIdUfxuiPwJybhL7A3wylZMlQFjhsgPMHMT5S/At8Mka+hmwJIgZ990i7KKgnP8Qi7UDVLWcojshOds5ru1uxTEN+GQqJzlTWpGqWk7iDPryqExTbQjTiUcepWn8N0sAuYbDqt8I2RFwBBwEO8FTBg2DzJglgOWvJbYMRz84Di6DVcBXU3d1VKK+kkpdlyWA+oGRerXoE3wn9TzoAevBBiC33JdoP4MkpnKyBAhbYIDvetMY3AuqzEweCzjJ8jwxB/cecAHcA3eA3HLvpp1Hrgjyija1WQKo14uzWtq4M1VVtwuCfSDoLrNEXASR95a3qkYnOLAESDBV6iGnIDYUc5Yt5EfdCepJswRQrxcWG7e08fF5JlrIH5g4iNhhzG9S5aaLJtTUmi0BVLWcJdLGnanSdRFhlBmugTBTa7YEUNVyVkgbd6aq73JD1QJWg9b6qOq5qHpLpZLjV2u2BHDGNa8L4XbwkhXlq+4J7SjHQ2A6/SB7ERQMinkjACQXUOhdsBy4Jtf4SddR2+cy+IVPhKOJZ94IQNmHwEygWQ8CTdUCji/RazifBNjkkNG6bZrT8X11+pG7PgnQElL1wpD4t5C4GrYEUL8ynBnSxp2pIndnRc7UE9WaLQH0KXLoLQTI4UmNRanYAbHkymFysQNyeFJjUSp2QCy5cpicux0Q9xwVAsRVLG/5SXfAPp7PTUOkM6DKzOSxQFWyfjAwlqo2DJF/nNDEs6QCxFvF4+xCAI9PTlNKs3ZAlN8HNKXABi6icrIEkNfSDVzbi6k+aVVYAjzXkjPue6bVrwrAe/bXJO8HebFeOL3RyKgCSCIDTtPKz+GO0T4AjzMGqfkoNbfC5SytaqYAks3Ad+AwWAs6MgapuZ+a3wsXC4ECWIPy5C8EyNPZTMIl8zsgCWl3zD8AAAD//33diukAAAAGSURBVAMA7h/qkMMmMQoAAAAASUVORK5CYII=" alt=""></a>
+                    <a href=""><img class="social-media-icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEfUlEQVR4Aeybe2iOURzHvQqhiBSi5E6MyK2ZKGokmVuLRUuI7A9/qElaIZeUhEZiKWZJ7omSZQpNZJmWLaM0d1pymWt7fX7b85bLdp7LOc/zbk+Pvp/3nPc553fO7/d7znuZ95y2bZL0Lx6PD4YrFoOT5EabwBNAwF1hDwFXwEyLCrkGXXkeqAJLAMG1hTVEVw3roB0kJHW5Vk2f1RCYX4FMREBTibQcDkAPaE7SdpDGcsuGqr/yNQEEMQDOEUIJjACnkr4l2J6Ffk6NvPTzJQE43Rl24tAjyACvmodhFWPtgM7UjctoAnAyBsvx8gnkQnvQVQcG2ADy/pDN+DHqxmQsATg2Ga/KoAB6gmn1YsCjUMZcEymNSDsBONMXTuLNTRgNfkvmKGXOIuirO5lWAnBgAQ7UQCZ4USlG98GLFmNUgw9zKT1LKwHMKneDwrVeYLEUUmEcLIOX4EVjvRglbHQTkBjHafmVjlthSCwWK4S4xXGuydfhbZTfIDAFmYBTRCWB5xF0HfW/JNdgExeHwWkIREEk4AGRpBFcJjynrhR9nsEiOqWB/L1A4Z/8TMAb3F4BYwjoFqUrWTajMFoFb8EX+ZGAH3i6CwYSRAHEqXsStvVwGONBsBt+gpb+NTadgAtMMBync+ELdSNirE+wnsHk/eESpTGZSkAlHk3DyQx4St0Xydgwh8FngMxJoSfdBLxn+rU4JXf9BvVAxHzFMJzJcqAWPEsrATixD+RvfM8O6Bgydz7s1RlDKwE6E7cU2ygBLeVOJMuPaAUkK/MtZd5oBbSUO5EsP7RWAP8bswXsNNBrcAwsP59RKLXZ6/hip5UAGaC1EyWgtd9BXf9DvwLsEhQlwC5DYW+PVkDY77BdfNEKsMtQ2NujFRD2O2wXX7QC7DIU9vZoBYT9DtvFF60AuwyFvT1aAWG7w27j0V0B9Q4m7OSgT3NdnGyP/dWcsZPrugn46GASnV2jvR2Mn7yfx3FO9gdQKDVe2apunKRubmjV2j+kuwLeNbigfshSNytbZTOlsgONSU2AnP7AB6VG8LPGfGWPJhqxyeZyf7DTQ7sOqnatFRCLxR4zuGyNp1DqEAHJIQhlp0QjfeVl42Tnxz18SOp7gPh8WR5skKMwtwlMjs4ou9JHNj/LCZMuyo6NjVcbC++PWivAmlb28FtVZSEByTGYawSZBR3/7M3zCXCCa+fB6UdnEX21pJ0AlqAckjjmwovp9C2EOgKWw1GVlLKZ8g7XloBT7Wdu7a202gmwvJXjMZ+tupsihc5Dwa1kG26eW6Om+htJAHfiNYPPAtkmS+GrZKd5OnN+MDGLkQSIIzgkR2Zkl7eTr8di4gX52jubuWQHuhf7/2yMJUBGxrGLlLKN9RWlackW3FTmkE8IY2MbTYB4hYPXKUfCGTClfAZKYey7lEZlPAHiHY7WwkLqsrv7COV3cCt5jcu2+z6MlQPy2nc7hm1/XxKQmBWnq2Alz7tDOmyHYpCPr8TLRM4RyUkSeV3LVviNtE/BrhvItnvlYSr6auk3AAAA///25A6VAAAABklEQVQDAOYSccTw+UyKAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
             </div>
-            <div class="footer-firts-links">
-                <li><a href="https://www.instagram.com/codenextofc/">Instagram</a></li>
-                <li><a href="">Threads</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Udemy</a></li>
+            <div class="center-footer-container">
+                <div class="ul-1">
+                    <p class="plus-title">Mais Codenext</p>
+                    <ul class="ul-plus--title">
+                        <a class="a-li" href="">
+                            <li>Termos de uso</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Equipe de gerenciamento</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Seja parceiro</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="ul2">
+                    <p class="plus-title">Mapa do site</p>
+                    <ul class="ul-plus--title">
+                        <a class="a-li" href="">
+                            <li>Oque fazemos?</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Por que Codenext?</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Como fazemos?</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Nossos serviços</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Casos de sucesso</li>
+                        </a>
+                        <a class="a-li" href="">
+                            <li>Entre em contato</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-second-links">
-                <li><a href="">Termos de uso</a></li>
-                <li><a href="">Equipe de gerenciamento</a></li>
-                <li><a href="">Seja parceiro</a></li>
-            </div>
-            <p class="copyright-text">Copyright 2025 @ codenext</p>
         </div>
     </footer>
 </body>
+
 </html>
