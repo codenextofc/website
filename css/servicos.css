@@ -1,0 +1,267 @@
+/* Importação de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+@font-face {
+    font-family: "WF Visual Sans";
+    src: url("https://dhygzobemt712.cloudfront.net/Fonts/VF/WFVisualSansVF.woff2")
+        format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Estilos globais e barra de progresso */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "WF Visual Sans";
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+#progress-bar {
+    z-index: 1000;
+    position: fixed;
+    --progress: 0;
+    height: 5px;
+    width: var(--progress);
+    background: linear-gradient(to right, #30507a, #0e8a78, #5CC9B3);
+    background-size: cover;
+    background-size: 200%;
+    background-position: center center;
+}
+
+.section-header {
+    padding: 0 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isotype-logo {
+    margin-right: 10px;
+    margin-bottom: -2px;
+    width: 70px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-icon {
+    margin-top: 5px;
+    width: 25px;
+}
+
+#language-button {
+    background-color: #FCFCFC;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FCFCFC;
+}
+
+.nav-button-wrapper a {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 10px;
+    color: #0F1C2C;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link p {
+    font-weight: 500;
+}
+
+.btn {
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 15px;
+    background-color: #0F1C2C;
+    color: #FCFCFC;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #047060; /* azul */
+    z-index: -1;
+    transition: left 0.3s ease;
+}
+
+.a-btn{
+  text-decoration: none;
+}
+
+/* Hover ativa o movimento da esquerda para a direita */
+.btn:hover::before {
+    left: 0;
+}
+
+.hero-section {
+  width: 100vw;
+}
+
+.hero-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+
+.hero-title {
+  max-width: 60vw;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FCFCFC;
+  padding: 20px 0;
+}
+
+.hero-description {
+  font-size: 17px;
+  color: #FCFCFC;
+  text-align: center;
+  max-width: 550px;
+  padding-bottom: 20px;
+  max-width:40vw;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.content-title {
+  overflow-y: hidden;
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+.content-paragraph {
+  overflow-y: hidden;
+  font-size: 17px;
+  max-width: 700px;
+  padding: 20px 0;
+}
+
+.content-paragraph2 {
+  overflow-y: hidden;
+  font-size: 17px;
+  max-width: 600px;
+  padding: 20px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2b2b2b;
+    padding: 70px 50px;
+}
+
+.right-footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-footer-container {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.logo-footer {
+    margin-bottom: -10px;
+    margin-left: -13px;
+    width: 300px;
+}
+
+.logo-title {
+    color: #fff;
+    font-size: 17px;
+}
+
+.social-media-icons {
+    width: 30px;
+}
+
+.social-media-container {
+    margin-top: 80px;
+}
+
+.plus-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FCFCFC;
+}
+
+.ul-plus--title {
+    padding: 10px 0;
+    color: #FCFCFC;
+    list-style-type: none;
+}
+
+.ul-plus--title li {
+    padding: 5px 0;
+}
+
+.a-li {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.a-li:hover {
+    text-decoration: underline;
+}

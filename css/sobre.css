@@ -71,7 +71,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 60px;
   background-color: #FCFCFC;
 }
@@ -556,67 +555,67 @@
 }
 
 .footer-container {
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    background-color: #0F1C2C;
-    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2b2b2b;
+    padding: 70px 50px;
 }
 
-.logo {
-    padding: 70px 0 50px 0;
+.right-footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-footer-container {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.logo-footer {
+    margin-bottom: -10px;
+    margin-left: -13px;
     width: 300px;
 }
 
-.footer-firts-links a {
-    color: #ffffff;
+.logo-title {
+    color: #fff;
     font-size: 17px;
-    text-decoration: none;
 }
 
-.footer-firts-links {
-    padding-bottom: 10px;
+.social-media-icons {
+    width: 30px;
+}
+
+.social-media-container {
+    margin-top: 80px;
+}
+
+.plus-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FCFCFC;
+}
+
+.ul-plus--title {
+    padding: 10px 0;
+    color: #FCFCFC;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.footer-firts-links a:hover {
-    text-decoration: underline;
+.ul-plus--title li {
+    padding: 5px 0;
 }
 
-.footer-firts-links li {
-    padding: 0 10px;
-}
-
-.footer-second-links a {
-    color: #ffffff;
-    font-size: 17px;
+.a-li {
     text-decoration: none;
+    color: #FCFCFC;
 }
 
-.footer-second-links {
-    padding-bottom: 50px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-second-links a:hover {
+.a-li:hover {
     text-decoration: underline;
-}
-
-.footer-second-links li {
-    padding: 0 10px;
-}
-
-.copyright-text {
-    font-size: 18px;
-    padding-bottom: 100px;
-    color: #ffffff;
 }
 
 @media (max-width: 768px) {
