@@ -20,6 +20,17 @@
     font-weight: 300;
 }
 
+body {
+      opacity: 0;
+      animation: fadeIn 0.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
 #progress-bar {
     z-index: 1000;
     position: fixed;
@@ -99,6 +110,50 @@
     font-weight: 500;
 }
 
+.dropdown-language {
+    display: none;
+    position: absolute;
+    right: 90px;
+    top: 60px; /* logo abaixo do botão */
+    transform: translateX(-30%); /* puxa para a esquerda */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    z-index: 2000; /* 🔥 fica acima da página */
+    min-width: 150px;
+}
+
+.dropdown-language a {
+    display: block;
+    padding: 10px 15px;
+    color: #0F1C2C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown-language a:hover {
+    background: #f4f4f4;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-icon {
+    margin-top: 5px;
+    width: 25px;
+}
+
+#language-button {
+    background-color: #FCFCFC;
+    border: none;
+    cursor: pointer;
+}
+
 .btn {
   font-weight: 600;
   width: 120px;
@@ -141,27 +196,36 @@
     height: 40px;
     margin-right: 10px;
     font-size: 15px;
-    background-color: #fff;
-    color: #0F1C2C;
+    background-color: #6c6c6c;
+    color: #FCFCFC;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
+.btn-white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #047060; /* azul */
+    z-index: -1;
+    transition: left 0.3s ease;
+}
+
+/* Hover ativa o movimento da esquerda para a direita */
+.btn-white:hover::before {
+    left: 0;
+}
 #a {
-    text-decoration: none;
-}
-
-.section-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.a-btn {
     text-decoration: none;
 }
 
@@ -174,19 +238,22 @@
     align-items: center;
     background-image: url(/img/us-img.jpg);
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    margin-bottom: 50px;
     gap: 40px;
+}
+
+.a-btn {
+    text-decoration: none;
 }
 
 .tajawal-white {
     font-family: "Tajawal";
     color: #fff;
     font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .hero-title {
@@ -194,21 +261,29 @@
     font-size: 50px;
     font-weight: 400;
     color: #fff;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .hero-img {
-    overflow: visible;
     padding: 30px 0;
     height: 100%;
     width: 30vw;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: end;
 }
 
 .hero-logo {
     width: 200px;
+}
+
+.button-click-middle {
+    justify-content: center;
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 .button-click {
@@ -225,11 +300,48 @@
 }
 
 .button-click-arrow {
-    border: 2px solid #FCFCFC;
-    border-radius: 100%;
+    margin-top: -1px;
+    margin-left: -2px;
     padding: 10px;
     width: 50px;
 }
+
+.border-arrow-black {
+    border-radius: 1000px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #000000;
+    overflow: hidden;
+}
+
+.border-arrow {
+    overflow: hidden;
+    border-radius: 1000px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fcfcfc;
+}
+
+.button-click-black {
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-click-black-title {
+    font-size: 25px;
+    color: #000000;
+}
+
+.button-click-black-arrow {
+    margin-top: -1px;
+    margin-left: -2px;
+    padding: 10px;
+    width: 50px;
+}
+
 
 .fast-text-section {
     display: flex;
@@ -269,11 +381,11 @@
 }
 
 .tajawal-black {
-    font-family: "Tajawal";
-    color: #000000;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 15px;
+font-family: "Tajawal";
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .section-start {
@@ -344,7 +456,6 @@
 }
 
 .section-services {
-    margin-bottom: 100px;
     padding: 0 50px;
 }
 

@@ -136,6 +136,50 @@
 }
 
 /* Hover ativa o movimento da esquerda para a direita */
+.dropdown-language {
+    display: none;
+    position: absolute;
+    right: 90px;
+    top: 60px; /* logo abaixo do botão */
+    transform: translateX(-30%); /* puxa para a esquerda */
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    z-index: 2000; /* 🔥 fica acima da página */
+    min-width: 150px;
+}
+
+.dropdown-language a {
+    display: block;
+    padding: 10px 15px;
+    color: #0F1C2C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown-language a:hover {
+    background: #f4f4f4;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-icon {
+    margin-top: 5px;
+    width: 25px;
+}
+
+#language-button {
+    background-color: #FCFCFC;
+    border: none;
+    cursor: pointer;
+}
+
 .btn:hover::before {
     left: 0;
 }

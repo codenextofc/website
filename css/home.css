@@ -21,6 +21,17 @@
     scroll-behavior: smooth;
 }
 
+body {
+      opacity: 0;
+      animation: fadeIn 0.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
 #progress-bar {
     z-index: 1000;
     position: fixed;
@@ -555,11 +566,11 @@
   border: none;
   background-color: transparent;
   margin: 15px 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #title1-works3{
-  max-width: 60%;
+  max-width: 70%;
 }
 
 #title1-works1{
@@ -587,7 +598,6 @@
 
 /* Seção de casos de sucesso */
 .section-cases {
-    margin-bottom: 50px;
     padding: 50px 50px;
 }
 

@@ -8,3 +8,19 @@ function updateProgressBar() {
 }
 
 document.addEventListener("scroll", updateProgressBar);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const langButton = document.getElementById("language-button");
+    const dropdown = document.getElementById("dropdown-language");
+
+    langButton.addEventListener("click", (e) => {
+        e.stopPropagation(); // evita fechar imediatamente
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+
+    // Fecha o dropdown ao clicar fora
+    document.addEventListener("click", () => {
+        dropdown.style.display = "none";
+    });
+});
