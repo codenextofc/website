@@ -259,6 +259,69 @@
             </div>
         </div>
     </footer>
+    <script>
+    // Seleciona o formulário da página
+    const form = document.querySelector(".form-wrapper");
+
+    // Adiciona um ouvinte para o evento de envio do formulário
+    form.addEventListener("submit", async (event) => {
+        // Previne o comportamento padrão (recarregar a página)
+        event.preventDefault();
+
+        // Pega os dados dos inputs
+        const formData = {
+            nome: form.querySelector(".name").value,
+            sobrenome: form.querySelector(".lastname").value,
+            empresa: form.querySelector(".enterprise").value,
+            nicho: form.querySelector(".enterprise-niche").value,
+            telefone: form.querySelector(".telephone").value,
+            email: form.querySelector(".email").value,
+            descricao: form.querySelector("#describe").value,
+        };
+
+        // Feedback visual para o usuário
+        const submitButton = form.querySelector(".btn-white");
+        submitButton.textContent = "Enviando...";
+        submitButton.disabled = true;
+
+        try {
+            // Envia os dados para o backend usando a API Fetch
+            const response = await fetch("http://localhost:3000/enviar-formulario", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                // Se deu tudo certo
+                submitButton.textContent = "Enviado!";
+                submitButton.style.backgroundColor = "#047060"; // Verde
+                form.reset(); // Limpa o formulário
+                setTimeout(() => {
+                    // Volta ao normal depois de alguns segundos
+                    submitButton.textContent = "Enviar";
+                    submitButton.style.backgroundColor = "";
+                    submitButton.disabled = false;
+                }, 4000);
+            } else {
+                // Se ocorreu um erro no servidor
+                throw new Error("Falha no envio.");
+            }
+        } catch (error) {
+            // Se ocorreu um erro na comunicação
+            console.error("Erro:", error);
+            submitButton.textContent = "Erro!";
+            submitButton.style.backgroundColor = "#d9534f"; // Vermelho
+             setTimeout(() => {
+                    submitButton.textContent = "Enviar";
+                    submitButton.style.backgroundColor = "";
+                    submitButton.disabled = false;
+                }, 4000);
+        }
+    });
+</script>
 </body>
 
 </html>
